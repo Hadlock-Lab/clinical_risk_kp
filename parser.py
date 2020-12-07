@@ -18,7 +18,7 @@ def load_data(data_folder):
     for line in edges_data:
         if line[0] and line[1] and line[0].split(':')[0] and line[2].split(':')[0]:
             yield {
-                "_id": '-'.join([line[0], str(line[1]), str(line[2]), str(line[2]), str(line[5]), line[-1]]),
+                "_id": '-'.join([line[0], line[4], line[5], line[7], str(line[8])]),
                 "subject": {
                     "id": line[0],
                     line[0].split(':')[0]: line[0],
@@ -29,8 +29,8 @@ def load_data(data_folder):
                     "edge_label": line[1].split(':')[-1],
                     "relation": line[3],
                     "uses_classifier": line[-3],
-                    "has_feature_importance": float(line[-2]),
-                    "has_auc_roc": float(line[-1])
+                    "has_feature_importance": float(line[8]),
+                    "has_auc_roc": '' if (line[9] == 'NA') else float(line[9])
                 },
                 "object": {
                     "id": line[2],
