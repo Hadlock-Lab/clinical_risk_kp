@@ -1,0 +1,20 @@
+{
+    "version": "0.1",
+    "__metadata__": {
+        "license_url": "",
+        "licence": "CC BY 4.0",
+        "url": ""
+    },
+    "dumper": {
+        "data_url": [
+            "https://storage.cloud.google.com/multiomics_provider_kp_data/clinical_risk_kg_nodes.tsv",
+            "https://storage.cloud.google.com/multiomics_provider_kp_data/clinical_risk_kg_edges.tsv"
+        ],
+        "uncompress": false,
+        "release": "version:get_release"
+    },
+    "uploader": {
+        "parser": "parser:load_data",
+        "on_duplicates": "error"
+    }
+}
