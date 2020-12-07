@@ -30,7 +30,7 @@ def load_data(data_folder):
                     "relation": line[3],
                     "uses_classifier": line[-3],
                     "has_feature_importance": float(line[8]),
-                    "has_auc_roc": float(line[9])
+                    "has_auc_roc": '' if (line[9] == 'NA') else float(line[9])
                 },
                 "object": {
                     "id": line[2],
