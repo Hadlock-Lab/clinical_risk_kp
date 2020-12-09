@@ -28,7 +28,7 @@ def load_data(data_folder):
                 "association": {
                     "edge_label": line[1].split(':')[-1],
                     "relation": line[3],
-                    "uses_classifier": line[-3],
+                    "uses_classifier": line[7],
                     "has_feature_importance": float(line[8]),
                     "has_auc_roc": None if (line[9] == 'NA') else float(line[9])
                 },
