@@ -11,7 +11,9 @@ def load_data(data_folder):
     nodes_data = csv.reader(nodes_f, delimiter="\t")
     edges_data = csv.reader(edges_f, delimiter="\t")
     next(nodes_data)
+    id_name_mapping = {}
     id_type_mapping = {}
+    id_xref_mapping = {}
     for line in nodes_data:
         id_name_mapping[line[0]] = line[1]
         id_type_mapping[line[0]] = line[2].split(':')[-1] if line[2].startswith("biolink:") else line[2]
@@ -57,7 +59,7 @@ def load_data(data_folder):
                         
             # Yield subject, predicate, and object properties
             yield {
-                "_id": '-'.join([line[0], line[1], line[2], line[6], str(line[7])[:6], str(line[8])[:6], str(line[9])[:6]),
+                "_id": '-'.join([line[0], line[1], line[2], line[6], str(line[7])[:6], str(line[8])[:6], str(line[9])[:6]]),
                 "subject": subject,
                 "predicate": predicate,
                 "object": object_
