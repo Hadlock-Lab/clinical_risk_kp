@@ -49,6 +49,7 @@ def load_data(data_folder):
                 "relation": line[3],
                 "provided_by": line[4],
                 "provided_date": line[5],
+                "provenance": "https://github.com/NCATSTranslator/Translator-All/wiki/EHR-Risk-KP",
                 "category": line[6].split(':')[-1] if line[6].startswith("biolink:") else line[6],
                 "classifier": line[7],
                 "auc_roc": int(float(line[8])*1e4)/1e4
