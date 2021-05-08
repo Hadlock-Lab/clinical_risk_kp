@@ -1,5 +1,5 @@
 {
-    "version": "0.1",
+    "version": "0.2",
     "__metadata__": {
         "license_url": "",
         "licence": "CC BY 4.0",
@@ -7,14 +7,14 @@
     },
     "dumper": {
         "data_url": [
-            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk_kg_nodes.tsv",
-            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk_kg_edges.tsv"
+            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk/ehr_risk_kg_nodes_2021_05_07.tsv",
+            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk/ehr_risk_kg_edges_2021_05_07.tsv"
         ],
         "uncompress": false,
         "release": "version:get_release"
     },
     "uploader": {
-        "parser": "parser:load_data",
+        "parser": "parser_v2:load_data",
         "on_duplicates": "error"
     }
 }
