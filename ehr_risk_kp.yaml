@@ -7,7 +7,7 @@ info:
     x-role: responsible developer
   description: Documentation of the EHR Clinical Risk KP query web services.
   termsOfService: https://biothings.io/about
-  title: EHR Clinical Risk KP API
+  title: Clinical Risk KP API
   version: '1.1'
   x-translator:
     component: KP
