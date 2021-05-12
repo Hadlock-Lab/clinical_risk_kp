@@ -14,8 +14,6 @@ info:
     team:
     - Multiomics Provider
     - Service Provider
-  x-trapi:
-    version: 1.0.0
 servers:
 - description: Encrypted Production server
   url: https://biothings.ncats.io/clinical_risk_kp
@@ -31,7 +29,6 @@ tags:
 - name: annotation
 - name: query
 - name: translator
-- name: trapi
 - name: biothings
 - name: biothings_graph
 paths:
