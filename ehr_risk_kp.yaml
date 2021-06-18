@@ -512,8 +512,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -530,8 +530,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -548,8 +548,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -566,8 +566,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -584,8 +584,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -602,8 +602,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -620,8 +620,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -638,8 +638,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -656,8 +656,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -674,8 +674,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -692,8 +692,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -710,8 +710,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -728,8 +728,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -746,8 +746,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -764,8 +764,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -782,8 +782,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -800,8 +800,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -818,8 +818,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -836,8 +836,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -854,8 +854,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -872,8 +872,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -890,8 +890,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -908,8 +908,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -926,8 +926,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -944,8 +944,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -962,8 +962,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -980,8 +980,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -998,8 +998,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"UNII:{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1016,8 +1016,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1034,8 +1034,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1052,8 +1052,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1070,8 +1070,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1088,8 +1088,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1106,8 +1106,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1124,8 +1124,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1142,8 +1142,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1160,8 +1160,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1178,8 +1178,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1196,8 +1196,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1214,8 +1214,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1232,8 +1232,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1250,8 +1250,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1268,8 +1268,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1286,8 +1286,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1304,8 +1304,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1322,8 +1322,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1340,8 +1340,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1358,8 +1358,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1376,8 +1376,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1394,8 +1394,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1412,8 +1412,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1430,8 +1430,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1448,8 +1448,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1466,8 +1466,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1484,8 +1484,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1502,8 +1502,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1520,8 +1520,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1538,8 +1538,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1556,8 +1556,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1574,8 +1574,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1592,8 +1592,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1610,8 +1610,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1628,8 +1628,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1646,8 +1646,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1664,8 +1664,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1682,8 +1682,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1700,8 +1700,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1718,8 +1718,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1736,8 +1736,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1754,8 +1754,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1772,8 +1772,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1790,8 +1790,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1808,8 +1808,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1826,8 +1826,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1844,8 +1844,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1862,8 +1862,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1880,8 +1880,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1898,8 +1898,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1916,8 +1916,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1934,8 +1934,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1952,8 +1952,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -1970,8 +1970,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -1988,8 +1988,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2006,8 +2006,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2024,8 +2024,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2042,8 +2042,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2060,8 +2060,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2078,8 +2078,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2096,8 +2096,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2114,8 +2114,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2132,8 +2132,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2150,8 +2150,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2168,8 +2168,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2186,8 +2186,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2204,8 +2204,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2222,8 +2222,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2240,8 +2240,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2258,8 +2258,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2276,8 +2276,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2294,8 +2294,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2312,8 +2312,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2330,8 +2330,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2348,8 +2348,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2366,8 +2366,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2384,8 +2384,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2402,8 +2402,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2420,8 +2420,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2438,8 +2438,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2456,8 +2456,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2474,8 +2474,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2492,8 +2492,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2510,8 +2510,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2528,8 +2528,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2546,8 +2546,8 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2564,8 +2564,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2582,8 +2582,8 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2600,8 +2600,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2618,8 +2618,8 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Disease AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2636,8 +2636,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2654,8 +2654,8 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2672,8 +2672,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2690,8 +2690,8 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2708,8 +2708,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2726,8 +2726,8 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:PhenotypicFeature AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2744,8 +2744,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
         sort: predicate.feature_coefficient
@@ -2762,8 +2762,8 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+        fields: object,predicate
+        q: subject.id:"{inputs[0]}" AND object.type:Procedure AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
@@ -2774,7 +2774,7 @@ components:
       supportBatch: false
   x-bte-response-mapping:
     ChemicalSubstance0:
-      CHEBI: hits.subject.CHEBI
+      CHEBI: hits.object.CHEBI
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2784,7 +2784,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     ChemicalSubstance5:
-      UNII: hits.subject.UNII
+      UNII: hits.object.UNII
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2794,7 +2794,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     Disease2:
-      MONDO: hits.subject.MONDO
+      MONDO: hits.object.MONDO
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2804,7 +2804,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     Disease3:
-      NCIT: hits.subject.NCIT
+      NCIT: hits.object.NCIT
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2814,7 +2814,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     Disease4:
-      SNOMEDCT: hits.subject.SNOMEDCT
+      SNOMEDCT: hits.object.SNOMEDCT
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2824,7 +2824,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     PhenotypicFeature1:
-      HP: hits.subject.HP
+      HP: hits.object.HP
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2834,7 +2834,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     PhenotypicFeature3:
-      NCIT: hits.subject.NCIT
+      NCIT: hits.object.NCIT
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2844,7 +2844,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     PhenotypicFeature4:
-      SNOMEDCT: hits.subject.SNOMEDCT
+      SNOMEDCT: hits.object.SNOMEDCT
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
@@ -2854,7 +2854,7 @@ components:
       provided_by: hits.predicate.provided_by
       type: hits.predicate.type
     Procedure3:
-      NCIT: hits.subject.NCIT
+      NCIT: hits.object.NCIT
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
