@@ -518,6 +518,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -536,6 +537,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -554,6 +556,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -572,6 +575,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -590,6 +594,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -608,6 +613,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -626,6 +632,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -644,6 +651,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -662,6 +670,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -680,6 +689,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -698,6 +708,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -716,6 +727,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -734,6 +746,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -752,6 +765,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -770,6 +784,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -788,6 +803,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -806,6 +822,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -824,6 +841,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -842,6 +860,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -860,6 +879,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -878,6 +898,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -896,6 +917,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -914,6 +936,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -932,6 +955,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -950,6 +974,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -968,6 +993,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -986,6 +1012,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1004,6 +1031,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1022,6 +1050,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1040,6 +1069,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1058,6 +1088,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1076,6 +1107,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1094,6 +1126,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1112,6 +1145,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1130,6 +1164,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1148,6 +1183,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1166,6 +1202,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1184,6 +1221,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1202,6 +1240,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1220,6 +1259,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1238,6 +1278,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1256,6 +1297,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1274,6 +1316,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1292,6 +1335,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1310,6 +1354,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1328,6 +1373,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1346,6 +1392,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1364,6 +1411,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1382,6 +1430,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1400,6 +1449,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1418,6 +1468,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1436,6 +1487,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1454,6 +1506,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1472,6 +1525,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1490,6 +1544,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1508,6 +1563,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1526,6 +1582,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1544,6 +1601,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1562,6 +1620,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1580,6 +1639,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1598,6 +1658,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1616,6 +1677,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1634,6 +1696,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1652,6 +1715,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1670,6 +1734,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1688,6 +1753,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1706,6 +1772,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1724,6 +1791,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1742,6 +1810,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1760,6 +1829,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1778,6 +1848,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1796,6 +1867,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1814,6 +1886,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1832,6 +1905,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1850,6 +1924,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1868,6 +1943,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1886,6 +1962,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1904,6 +1981,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1922,6 +2000,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1940,6 +2019,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1958,6 +2038,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1976,6 +2057,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1994,6 +2076,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2012,6 +2095,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2030,6 +2114,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2048,6 +2133,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2066,6 +2152,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2084,6 +2171,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2102,6 +2190,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2120,6 +2209,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2138,6 +2228,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2156,6 +2247,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2174,6 +2266,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2192,6 +2285,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2210,6 +2304,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2228,6 +2323,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2246,6 +2342,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2264,6 +2361,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2282,6 +2380,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2300,6 +2399,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2318,6 +2418,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2336,6 +2437,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2354,6 +2456,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2372,6 +2475,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2390,6 +2494,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2408,6 +2513,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2426,6 +2532,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2444,6 +2551,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2462,6 +2570,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2480,6 +2589,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2498,6 +2608,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2516,6 +2627,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2534,6 +2646,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2552,6 +2665,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2570,6 +2684,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2588,6 +2703,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2606,6 +2722,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2624,6 +2741,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2642,6 +2760,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2660,6 +2779,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2678,6 +2798,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2696,6 +2817,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2714,6 +2836,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2732,6 +2855,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2750,6 +2874,7 @@ components:
         size: 1000
         sort: predicate.feature_coefficient
       predicate: negatively_correlated_with
+      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2768,6 +2893,7 @@ components:
         size: 1000
         sort: -predicate.feature_coefficient
       predicate: positively_correlated_with
+      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
