@@ -2782,7 +2782,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     ChemicalSubstance5:
       UNII: hits.object.UNII
       auc_roc: hits.predicate.auc_roc
@@ -2792,7 +2791,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     Disease2:
       MONDO: hits.object.MONDO
       auc_roc: hits.predicate.auc_roc
@@ -2802,7 +2800,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     Disease3:
       NCIT: hits.object.NCIT
       auc_roc: hits.predicate.auc_roc
@@ -2812,7 +2809,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     Disease4:
       SNOMEDCT: hits.object.SNOMEDCT
       auc_roc: hits.predicate.auc_roc
@@ -2822,7 +2818,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     PhenotypicFeature1:
       HP: hits.object.HP
       auc_roc: hits.predicate.auc_roc
@@ -2832,7 +2827,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     PhenotypicFeature3:
       NCIT: hits.object.NCIT
       auc_roc: hits.predicate.auc_roc
@@ -2842,7 +2836,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     PhenotypicFeature4:
       SNOMEDCT: hits.object.SNOMEDCT
       auc_roc: hits.predicate.auc_roc
@@ -2852,7 +2845,6 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
     Procedure3:
       NCIT: hits.object.NCIT
       auc_roc: hits.predicate.auc_roc
@@ -2862,4 +2854,3 @@ components:
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
       provenance: hits.predicate.provenance
       provided_by: hits.predicate.provided_by
-      type: hits.predicate.type
