@@ -1296,42 +1296,6 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:Disease AND object.type:Disease AND predicate.type:negatively_correlated_with AND _exists_:object.NCIT
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Disease3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:Disease AND object.type:Disease AND predicate.type:related_to AND _exists_:object.NCIT
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: positively_correlated_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
     Disease3-Disease4-negatively_correlated_with:
     - inputs:
       - id: NCIT
@@ -1440,24 +1404,6 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:Disease AND object.type:PhenotypicFeature AND predicate.type:negatively_correlated_with AND _exists_:object.SNOMEDCT
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
     Disease3-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: NCIT
@@ -1490,24 +1436,6 @@ components:
         size: 1000
       predicate: negatively_correlated_with
       relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:Disease AND object.type:Procedure AND predicate.type:related_to AND _exists_:object.NCIT
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: positively_correlated_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2466,24 +2394,6 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND object.type:PhenotypicFeature AND predicate.type:related_to AND _exists_:object.SNOMEDCT
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: positively_correlated_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
     PhenotypicFeature4-Procedure3-negatively_correlated_with:
     - inputs:
       - id: SNOMEDCT
@@ -2498,24 +2408,6 @@ components:
         size: 1000
       predicate: negatively_correlated_with
       relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND object.type:Procedure AND predicate.type:related_to AND _exists_:object.NCIT
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: positively_correlated_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2570,24 +2462,6 @@ components:
         size: 1000
       predicate: negatively_correlated_with
       relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Procedure3-Disease3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Procedure
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: object,predicate
-        q: subject.id:"{inputs[0]}" AND subject.type:Procedure AND object.type:Disease AND predicate.type:related_to AND _exists_:object.NCIT
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: positively_correlated_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
