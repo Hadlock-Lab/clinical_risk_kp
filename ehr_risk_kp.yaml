@@ -183,131 +183,131 @@ paths:
       tags:
       - query
       x-bte-kgs-operations:
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease2-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature1-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature4-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Procedure3-related_to'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Procedure3-negatively_correlated_with'
     post:
       parameters:
@@ -522,7 +522,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Disease2-related_to:
+    ChemicalSubstance0-Disease2-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -535,7 +535,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -558,7 +558,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Disease3-related_to:
+    ChemicalSubstance0-Disease3-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -571,7 +571,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -594,7 +594,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Disease4-related_to:
+    ChemicalSubstance0-Disease4-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -607,7 +607,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -630,7 +630,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature1-related_to:
+    ChemicalSubstance0-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -643,7 +643,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -666,7 +666,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature3-related_to:
+    ChemicalSubstance0-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -679,7 +679,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -702,7 +702,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature4-related_to:
+    ChemicalSubstance0-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -715,7 +715,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -738,7 +738,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Procedure3-related_to:
+    ChemicalSubstance0-Procedure3-positively_correlated_with:
     - inputs:
       - id: CHEBI
         semantic: ChemicalSubstance
@@ -751,7 +751,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -774,7 +774,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Disease2-related_to:
+    ChemicalSubstance5-Disease2-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -787,7 +787,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -810,7 +810,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Disease3-related_to:
+    ChemicalSubstance5-Disease3-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -823,7 +823,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -846,7 +846,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Disease4-related_to:
+    ChemicalSubstance5-Disease4-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -859,7 +859,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -882,7 +882,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature1-related_to:
+    ChemicalSubstance5-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -895,7 +895,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -918,7 +918,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature3-related_to:
+    ChemicalSubstance5-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -931,7 +931,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -954,7 +954,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature4-related_to:
+    ChemicalSubstance5-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -967,7 +967,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -990,7 +990,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Procedure3-related_to:
+    ChemicalSubstance5-Procedure3-positively_correlated_with:
     - inputs:
       - id: UNII
         semantic: ChemicalSubstance
@@ -1003,7 +1003,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1026,7 +1026,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-Disease2-related_to:
+    Disease2-Disease2-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1039,7 +1039,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1062,7 +1062,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-Disease3-related_to:
+    Disease2-Disease3-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1075,7 +1075,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1098,7 +1098,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-Disease4-related_to:
+    Disease2-Disease4-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1111,7 +1111,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1134,7 +1134,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-PhenotypicFeature1-related_to:
+    Disease2-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1147,7 +1147,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1170,7 +1170,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-PhenotypicFeature3-related_to:
+    Disease2-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1183,7 +1183,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1206,7 +1206,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-PhenotypicFeature4-related_to:
+    Disease2-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1219,7 +1219,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1242,7 +1242,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease2-Procedure3-related_to:
+    Disease2-Procedure3-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -1255,7 +1255,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1278,7 +1278,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-Disease2-related_to:
+    Disease3-Disease2-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1291,7 +1291,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1314,7 +1314,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-Disease3-related_to:
+    Disease3-Disease3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1327,7 +1327,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1350,7 +1350,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-Disease4-related_to:
+    Disease3-Disease4-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1363,7 +1363,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1386,7 +1386,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-PhenotypicFeature1-related_to:
+    Disease3-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1399,7 +1399,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1422,7 +1422,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-PhenotypicFeature3-related_to:
+    Disease3-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1435,7 +1435,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1458,7 +1458,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-PhenotypicFeature4-related_to:
+    Disease3-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1471,7 +1471,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1494,7 +1494,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease3-Procedure3-related_to:
+    Disease3-Procedure3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Disease
@@ -1507,7 +1507,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1530,7 +1530,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-Disease2-related_to:
+    Disease4-Disease2-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1543,7 +1543,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1566,7 +1566,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-Disease3-related_to:
+    Disease4-Disease3-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1579,7 +1579,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1602,7 +1602,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-Disease4-related_to:
+    Disease4-Disease4-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1615,7 +1615,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1638,7 +1638,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-PhenotypicFeature1-related_to:
+    Disease4-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1651,7 +1651,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1674,7 +1674,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-PhenotypicFeature3-related_to:
+    Disease4-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1687,7 +1687,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1710,7 +1710,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-PhenotypicFeature4-related_to:
+    Disease4-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1723,7 +1723,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1746,7 +1746,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Disease4-Procedure3-related_to:
+    Disease4-Procedure3-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: Disease
@@ -1759,7 +1759,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -1782,7 +1782,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-Disease2-related_to:
+    PhenotypicFeature1-Disease2-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -1795,7 +1795,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -1818,7 +1818,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-Disease3-related_to:
+    PhenotypicFeature1-Disease3-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -1831,7 +1831,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -1854,7 +1854,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-Disease4-related_to:
+    PhenotypicFeature1-Disease4-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -1867,7 +1867,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -1890,7 +1890,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature1-related_to:
+    PhenotypicFeature1-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -1903,7 +1903,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -1926,7 +1926,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature3-related_to:
+    PhenotypicFeature1-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -1939,7 +1939,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -1962,7 +1962,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature4-related_to:
+    PhenotypicFeature1-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -1975,7 +1975,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -1998,7 +1998,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature1-Procedure3-related_to:
+    PhenotypicFeature1-Procedure3-positively_correlated_with:
     - inputs:
       - id: HP
         semantic: PhenotypicFeature
@@ -2011,7 +2011,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2034,7 +2034,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-Disease2-related_to:
+    PhenotypicFeature3-Disease2-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2047,7 +2047,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2070,7 +2070,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-Disease3-related_to:
+    PhenotypicFeature3-Disease3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2083,7 +2083,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2106,7 +2106,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-Disease4-related_to:
+    PhenotypicFeature3-Disease4-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2119,7 +2119,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2142,7 +2142,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature1-related_to:
+    PhenotypicFeature3-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2155,7 +2155,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2178,7 +2178,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature3-related_to:
+    PhenotypicFeature3-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2191,7 +2191,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2214,7 +2214,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature4-related_to:
+    PhenotypicFeature3-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2227,7 +2227,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2250,7 +2250,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature3-Procedure3-related_to:
+    PhenotypicFeature3-Procedure3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
@@ -2263,7 +2263,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2286,7 +2286,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-Disease2-related_to:
+    PhenotypicFeature4-Disease2-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2299,7 +2299,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2322,7 +2322,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-Disease3-related_to:
+    PhenotypicFeature4-Disease3-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2335,7 +2335,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2358,7 +2358,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-Disease4-related_to:
+    PhenotypicFeature4-Disease4-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2371,7 +2371,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2394,7 +2394,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature1-related_to:
+    PhenotypicFeature4-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2407,7 +2407,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2430,7 +2430,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature3-related_to:
+    PhenotypicFeature4-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2443,7 +2443,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2466,7 +2466,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature4-related_to:
+    PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2479,7 +2479,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2502,7 +2502,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    PhenotypicFeature4-Procedure3-related_to:
+    PhenotypicFeature4-Procedure3-positively_correlated_with:
     - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
@@ -2515,7 +2515,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
@@ -2538,7 +2538,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-Disease2-related_to:
+    Procedure3-Disease2-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2551,7 +2551,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       source: EHR Risk Provider (Multiomics)
@@ -2574,7 +2574,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-Disease3-related_to:
+    Procedure3-Disease3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2587,7 +2587,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       source: EHR Risk Provider (Multiomics)
@@ -2610,7 +2610,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-Disease4-related_to:
+    Procedure3-Disease4-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2623,7 +2623,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       source: EHR Risk Provider (Multiomics)
@@ -2646,7 +2646,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-PhenotypicFeature1-related_to:
+    Procedure3-PhenotypicFeature1-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2659,7 +2659,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       source: EHR Risk Provider (Multiomics)
@@ -2682,7 +2682,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-PhenotypicFeature3-related_to:
+    Procedure3-PhenotypicFeature3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2695,7 +2695,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       source: EHR Risk Provider (Multiomics)
@@ -2718,7 +2718,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-PhenotypicFeature4-related_to:
+    Procedure3-PhenotypicFeature4-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2731,7 +2731,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       source: EHR Risk Provider (Multiomics)
@@ -2754,7 +2754,7 @@ components:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    Procedure3-Procedure3-related_to:
+    Procedure3-Procedure3-positively_correlated_with:
     - inputs:
       - id: NCIT
         semantic: Procedure
@@ -2767,7 +2767,7 @@ components:
           AND predicate.feature_coefficient:>0.4
         size: 1000
         sort: -predicate.feature_coefficient
-      predicate: related_to
+      predicate: positively_correlated_with
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       source: EHR Risk Provider (Multiomics)
