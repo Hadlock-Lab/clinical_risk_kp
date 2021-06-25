@@ -1,9 +1,9 @@
 openapi: 3.0.0
 info:
   contact:
-    email: help@biothings.io
-    name: JIWEN XIN
-    x-id: https://github.com/kevinxin90
+    email: ryan.roper@isbscience.org
+    name: Ryan Roper
+    x-id: https://github.com/rtroper
     x-role: responsible developer
   description: Documentation of the EHR Clinical Risk KP query web services.
   termsOfService: https://biothings.io/about
