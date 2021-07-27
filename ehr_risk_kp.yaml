@@ -14,6 +14,7 @@ info:
     team:
     - Multiomics Provider
     - Service Provider
+    biolink-version: "2.1.0"
 servers:
 - description: Encrypted Production server
   url: https://biothings.ncats.io/clinical_risk_kp
