@@ -506,38 +506,38 @@ components:
   x-bte-kgs-operations:
     ChemicalSubstance0-Disease2-negatively_correlated_with:
     - inputs:
-      - id: CHEBI
-        semantic: ChemicalSubstance
-      outputs:
       - id: MONDO
         semantic: Disease
+      outputs:
+      - id: CHEBI
+        semantic: ChemicalSubstance
       parameters:
         fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
           AND predicate.feature_coefficient:<-0.4
         size: 1000
       predicate: negatively_correlated_with
       relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease2'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
     ChemicalSubstance0-Disease2-positively_correlated_with:
     - inputs:
-      - id: CHEBI
-        semantic: ChemicalSubstance
-      outputs:
       - id: MONDO
         semantic: Disease
+      outputs:
+      - id: CHEBI
+        semantic: ChemicalSubstance
       parameters:
         fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
           AND predicate.feature_coefficient:>0.4
         size: 1000
       predicate: positively_correlated_with
       relation: associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease2'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       source: EHR Risk Provider (Multiomics)
       supportBatch: false
     ChemicalSubstance0-Disease3-negatively_correlated_with:
