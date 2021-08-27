@@ -185,132 +185,132 @@ paths:
       tags:
       - query
       x-bte-kgs-operations:
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease2-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance0-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease2-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/ChemicalSubstance5-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-ChemicalSubstance0-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-ChemicalSubstance0-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-ChemicalSubstance5-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-ChemicalSubstance5-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-ChemicalSubstance5-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-ChemicalSubstance5-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-ChemicalSubstance5-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-ChemicalSubstance5-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-ChemicalSubstance5-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-ChemicalSubstance5-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-positively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease2-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease2-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease2-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Disease4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Disease4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature1-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature1-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature1-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature3-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature4-negatively_correlated_with'
-      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Procedure3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-PhenotypicFeature4-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease2-Procedure3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease3-Procedure3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Disease4-Procedure3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature1-Procedure3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature3-Procedure3-positively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/PhenotypicFeature4-Procedure3-positively_correlated_with'
       - $ref: '#/components/x-bte-kgs-operations/Procedure3-Procedure3-negatively_correlated_with'
+      - $ref: '#/components/x-bte-kgs-operations/Procedure3-Procedure3-positively_correlated_with'
     post:
       parameters:
       - $ref: '#/components/parameters/dotfield'
@@ -506,7 +506,25 @@ components:
         type: array
       - type: string
   x-bte-kgs-operations:
-    ChemicalSubstance0-Disease2-negatively_correlated_with:
+  ## EXPLANATION:
+  ## - the data is in this format:
+  ##   - subject = feature of logistic regression models
+  ##   - object = outcome of logistic regressio models (what we want to predict)
+  ##              this can be Disease, PhenotypicFeature, Procedure (not ChemicalSubstance)
+  ##              Positive means the patient has this Disease, PhenotypicFeature, Procedure / Negative means they haven't
+  ##   - the feature co-efficient: larger-magnitude positive number means presence of this feature is correlated with having the outcome (positive)
+  ##                               larger-magnitude negative number means ABSENCE of this feature is correlated with having the outcome
+  ##   - Disease: 3 ID namespaces. 2:MONDO, 3:NCIT, 4:SNOMEDCT
+  ##   - PhenotypicFeature: 3 ID namespaces. 1:HP, 3:NCIT, 4:SNOMEDCT
+  ##   - ChemicalSubstance: 2 ID namespaces. 0:CHEBI, 5:UNII
+  ##   - Procedure: 1 ID namespace. 3:NCIT
+  ## querying is based on this setup: "given the outcome X, what are some features associated with it?"
+  ##   - the outcome (input semantic type here) can be Disease, PhenotypicFeature, Procedure (not ChemicalSubstance)
+  ##       - maps to object.id
+  ##   - the features of the logistic regression models can be any of the 4 semantic types
+  ##       - maps to subject.id
+  ##   - the relationship refers to the predicate (predicate.type) and feature co-efficient magnitude (> |0.4|)
+    Disease2-ChemicalSubstance0-negatively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -514,17 +532,16 @@ components:
       - id: CHEBI
         semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
+        fields: subject,predicate,object
         q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Disease2-positively_correlated_with:
+    Disease2-ChemicalSubstance0-positively_correlated_with:
     - inputs:
       - id: MONDO
         semantic: Disease
@@ -532,482 +549,455 @@ components:
       - id: CHEBI
         semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
+        fields: subject,predicate,object
         q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Disease3-negatively_correlated_with:
+    Disease3-ChemicalSubstance0-negatively_correlated_with:
     - inputs:
-      - id: CHEBI
-        semantic: SmallMolecule
-      outputs:
       - id: NCIT
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-Disease3-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-ChemicalSubstance0-positively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-Disease4-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-ChemicalSubstance0-negatively_correlated_with:
+    - inputs:
       - id: SNOMEDCT
         semantic: Disease
+      outputs:
+      - id: CHEBI
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Disease4-positively_correlated_with:
+    Disease4-ChemicalSubstance0-positively_correlated_with:
     - inputs:
-      - id: CHEBI
-        semantic: SmallMolecule
-      outputs:
       - id: SNOMEDCT
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-ChemicalSubstance0-negatively_correlated_with:
+    - inputs:
       - id: HP
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-ChemicalSubstance0-positively_correlated_with:
+    - inputs:
       - id: HP
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-ChemicalSubstance0-negatively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
+      outputs:
+      - id: CHEBI
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature3-positively_correlated_with:
+    PhenotypicFeature3-ChemicalSubstance0-positively_correlated_with:
     - inputs:
-      - id: CHEBI
-        semantic: SmallMolecule
-      outputs:
       - id: NCIT
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-ChemicalSubstance0-negatively_correlated_with:
+    - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-ChemicalSubstance0-positively_correlated_with:
+    - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance0-Procedure3-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: CHEBI
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Procedure3-ChemicalSubstance0-negatively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: Procedure
+      outputs:
+      - id: CHEBI
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.CHEBI
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance0-Procedure3-positively_correlated_with:
+    Procedure3-ChemicalSubstance0-positively_correlated_with:
     - inputs:
-      - id: CHEBI
-        semantic: SmallMolecule
-      outputs:
       - id: NCIT
         semantic: Procedure
+      outputs:
+      - id: CHEBI
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.CHEBI
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance0'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Disease2-negatively_correlated_with:
+    Disease2-ChemicalSubstance5-negatively_correlated_with:
     - inputs:
-      - id: UNII
-        semantic: SmallMolecule
-      outputs:
       - id: MONDO
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-Disease2-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-ChemicalSubstance5-positively_correlated_with:
+    - inputs:
       - id: MONDO
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-Disease3-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-ChemicalSubstance5-negatively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-Disease3-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-ChemicalSubstance5-positively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-Disease4-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-ChemicalSubstance5-negatively_correlated_with:
+    - inputs:
       - id: SNOMEDCT
         semantic: Disease
+      outputs:
+      - id: UNII
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Disease4-positively_correlated_with:
+    Disease4-ChemicalSubstance5-positively_correlated_with:
     - inputs:
-      - id: UNII
-        semantic: SmallMolecule
-      outputs:
       - id: SNOMEDCT
         semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-ChemicalSubstance5-negatively_correlated_with:
+    - inputs:
       - id: HP
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-ChemicalSubstance5-positively_correlated_with:
+    - inputs:
       - id: HP
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-ChemicalSubstance5-negatively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: PhenotypicFeature
+      outputs:
+      - id: UNII
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature3-positively_correlated_with:
+    PhenotypicFeature3-ChemicalSubstance5-positively_correlated_with:
     - inputs:
-      - id: UNII
-        semantic: SmallMolecule
-      outputs:
       - id: NCIT
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-ChemicalSubstance5-negatively_correlated_with:
+    - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-ChemicalSubstance5-positively_correlated_with:
+    - inputs:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    ChemicalSubstance5-Procedure3-negatively_correlated_with:
-    - inputs:
+      outputs:
       - id: UNII
         semantic: SmallMolecule
-      outputs:
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Procedure3-ChemicalSubstance5-negatively_correlated_with:
+    - inputs:
       - id: NCIT
         semantic: Procedure
+      outputs:
+      - id: UNII
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.UNII
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
-    ChemicalSubstance5-Procedure3-positively_correlated_with:
+    Procedure3-ChemicalSubstance5-positively_correlated_with:
     - inputs:
-      - id: UNII
-        semantic: SmallMolecule
-      outputs:
       - id: NCIT
         semantic: Procedure
+      outputs:
+      - id: UNII
+        semantic: SmallMolecule
       parameters:
-        fields: subject,predicate
-        q: object.id:UNII\:{inputs[0]} AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:ChemicalSubstance AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.UNII
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
+        $ref: '#/components/x-bte-response-mapping/ChemicalSubstance5'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Disease2-Disease2-negatively_correlated_with:
@@ -1018,12 +1008,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
+        fields: subject,predicate,object
         q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -1036,230 +1025,13 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
+        fields: subject,predicate,object
         q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-Disease3-positively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-Disease4-negatively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-Disease4-positively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-PhenotypicFeature3-positively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-Procedure3-negatively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease2-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: MONDO
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Disease3-Disease2-negatively_correlated_with:
@@ -1270,12 +1042,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -1288,230 +1059,13 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Disease3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Disease4-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Disease4-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-PhenotypicFeature3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Procedure3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease3-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Disease4-Disease2-negatively_correlated_with:
@@ -1522,12 +1076,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -1540,230 +1093,13 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-Disease3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-Disease4-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-Disease4-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-PhenotypicFeature3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-Procedure3-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    Disease4-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     PhenotypicFeature1-Disease2-negatively_correlated_with:
@@ -1774,12 +1110,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
+        fields: subject,predicate,object
         q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -1792,230 +1127,13 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
+        fields: subject,predicate,object
         q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-Disease3-positively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-Disease4-negatively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-Disease4-positively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature3-positively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-Procedure3-negatively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature1-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     PhenotypicFeature3-Disease2-negatively_correlated_with:
@@ -2026,12 +1144,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -2044,230 +1161,13 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-Disease3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-Disease4-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-Disease4-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-Procedure3-negatively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature3-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     PhenotypicFeature4-Disease2-negatively_correlated_with:
@@ -2278,12 +1178,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -2296,230 +1195,13 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Disease3-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Disease3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Disease4-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Disease4-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: Disease
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Disease4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature1-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature1-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: HP
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature3-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature4-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Procedure3-negatively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
-        size: 1000
-      predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
-      # source: EHR Risk Provider (Multiomics)
-      supportBatch: false
-    PhenotypicFeature4-Procedure3-positively_correlated_with:
-    - inputs:
-      - id: SNOMEDCT
-        semantic: PhenotypicFeature
-      outputs:
-      - id: NCIT
-        semantic: Procedure
-      parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
-        size: 1000
-      predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
-      response_mapping:
-        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-Disease2-negatively_correlated_with:
@@ -2530,12 +1212,11 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
       # source: EHR Risk Provider (Multiomics)
@@ -2548,14 +1229,217 @@ components:
       - id: MONDO
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.MONDO
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease2'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-Disease3-negatively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-Disease3-positively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-Disease3-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-Disease3-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-Disease3-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-Disease3-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-Disease3-negatively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-Disease3-positively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-Disease3-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-Disease3-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-Disease3-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-Disease3-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-Disease3-negatively_correlated_with:
@@ -2566,12 +1450,11 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
       # source: EHR Risk Provider (Multiomics)
@@ -2584,14 +1467,217 @@ components:
       - id: NCIT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-Disease4-negatively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-Disease4-positively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-Disease4-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-Disease4-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-Disease4-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-Disease4-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-Disease4-negatively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-Disease4-positively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-Disease4-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-Disease4-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-Disease4-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-Disease4-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Disease4'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-Disease4-negatively_correlated_with:
@@ -2602,12 +1688,11 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
       # source: EHR Risk Provider (Multiomics)
@@ -2620,14 +1705,217 @@ components:
       - id: SNOMEDCT
         semantic: Disease
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Disease AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Disease4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-PhenotypicFeature1-negatively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-PhenotypicFeature1-positively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-PhenotypicFeature1-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-PhenotypicFeature1-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-PhenotypicFeature1-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-PhenotypicFeature1-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-PhenotypicFeature1-negatively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-PhenotypicFeature1-positively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-PhenotypicFeature1-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-PhenotypicFeature1-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-PhenotypicFeature1-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-PhenotypicFeature1-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-PhenotypicFeature1-negatively_correlated_with:
@@ -2638,12 +1926,11 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.HP
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
       # source: EHR Risk Provider (Multiomics)
@@ -2656,14 +1943,217 @@ components:
       - id: HP
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.HP
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature1'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-PhenotypicFeature3-negatively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-PhenotypicFeature3-positively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-PhenotypicFeature3-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-PhenotypicFeature3-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-PhenotypicFeature3-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-PhenotypicFeature3-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-PhenotypicFeature3-negatively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-PhenotypicFeature3-positively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-PhenotypicFeature3-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-PhenotypicFeature3-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-PhenotypicFeature3-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-PhenotypicFeature3-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-PhenotypicFeature3-negatively_correlated_with:
@@ -2674,12 +2164,11 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
       # source: EHR Risk Provider (Multiomics)
@@ -2692,14 +2181,217 @@ components:
       - id: NCIT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-PhenotypicFeature4-negatively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-PhenotypicFeature4-positively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-PhenotypicFeature4-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-PhenotypicFeature4-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-PhenotypicFeature4-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-PhenotypicFeature4-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-PhenotypicFeature4-negatively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-PhenotypicFeature4-positively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-PhenotypicFeature4-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-PhenotypicFeature4-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-PhenotypicFeature4-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-PhenotypicFeature4-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-PhenotypicFeature4-negatively_correlated_with:
@@ -2710,12 +2402,11 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.SNOMEDCT
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
       # source: EHR Risk Provider (Multiomics)
@@ -2728,14 +2419,217 @@ components:
       - id: SNOMEDCT
         semantic: PhenotypicFeature
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:PhenotypicFeature AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.SNOMEDCT
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/PhenotypicFeature4'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-Procedure3-negatively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease2-Procedure3-positively_correlated_with:
+    - inputs:
+      - id: MONDO
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-Procedure3-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease3-Procedure3-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-Procedure3-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    Disease4-Procedure3-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: Disease
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-Procedure3-negatively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature1-Procedure3-positively_correlated_with:
+    - inputs:
+      - id: HP
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-Procedure3-negatively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature3-Procedure3-positively_correlated_with:
+    - inputs:
+      - id: NCIT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-Procedure3-negatively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: negatively_correlated_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
+      # source: EHR Risk Provider (Multiomics)
+      supportBatch: false
+    PhenotypicFeature4-Procedure3-positively_correlated_with:
+    - inputs:
+      - id: SNOMEDCT
+        semantic: PhenotypicFeature
+      outputs:
+      - id: NCIT
+        semantic: Procedure
+      parameters:
+        fields: subject,predicate,object
+        q: object.id:"SNOMEDCT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
+        size: 1000
+      predicate: has_real_world_evidence_of_association_with
+      response_mapping:
+        $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
     Procedure3-Procedure3-negatively_correlated_with:
@@ -2746,12 +2640,11 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
-          AND predicate.feature_coefficient:<-0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:negatively_correlated_with
+          AND predicate.feature_coefficient:<-0.4 AND _exists_:subject.NCIT
         size: 1000
       predicate: negatively_correlated_with
-      relation: negatively_associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
@@ -2764,26 +2657,34 @@ components:
       - id: NCIT
         semantic: Procedure
       parameters:
-        fields: subject,predicate
-        q: object.id:"{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
-          AND predicate.feature_coefficient:>0.4
+        fields: subject,predicate,object
+        q: object.id:"NCIT:{inputs[0]}" AND subject.type:Procedure AND predicate.type:related_to
+          AND predicate.feature_coefficient:>0.4 AND _exists_:subject.NCIT
         size: 1000
       predicate: has_real_world_evidence_of_association_with
-      relation: associated_with_risk_for
       response_mapping:
         $ref: '#/components/x-bte-response-mapping/Procedure3'
       # source: EHR Risk Provider (Multiomics)
       supportBatch: false
   x-bte-response-mapping:
     ChemicalSubstance0:
+      ## edge's object
       CHEBI: hits.subject.CHEBI
+      ## based on the logistic regression model
+      ## not in biolink-model yet
       auc_roc: hits.predicate.auc_roc
       classifier: hits.predicate.classifier
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      ## explaining the actual data using biolink-model
+      ## logistic regression model feature: subject, model's outcome: object
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      ## additional provenance info, not formatted to biolink-model yet
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     ChemicalSubstance5:
       UNII: hits.subject.UNII
       auc_roc: hits.predicate.auc_roc
@@ -2791,8 +2692,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     Disease2:
       MONDO: hits.subject.MONDO
       auc_roc: hits.predicate.auc_roc
@@ -2800,8 +2704,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     Disease3:
       NCIT: hits.subject.NCIT
       auc_roc: hits.predicate.auc_roc
@@ -2809,8 +2716,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     Disease4:
       SNOMEDCT: hits.subject.SNOMEDCT
       auc_roc: hits.predicate.auc_roc
@@ -2818,8 +2728,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     PhenotypicFeature1:
       HP: hits.subject.HP
       auc_roc: hits.predicate.auc_roc
@@ -2827,8 +2740,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     PhenotypicFeature3:
       NCIT: hits.subject.NCIT
       auc_roc: hits.predicate.auc_roc
@@ -2836,8 +2752,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     PhenotypicFeature4:
       SNOMEDCT: hits.subject.SNOMEDCT
       auc_roc: hits.predicate.auc_roc
@@ -2845,8 +2764,11 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
     Procedure3:
       NCIT: hits.subject.NCIT
       auc_roc: hits.predicate.auc_roc
@@ -2854,5 +2776,8 @@ components:
       feature_coefficient: hits.predicate.feature_coefficient
       negative_cohort_order_of_magnitude: hits.predicate.negative_cohort_order_of_magnitude
       positive_cohort_order_of_magnitude: hits.predicate.positive_cohort_order_of_magnitude
-      provenance: hits.predicate.provenance
-      provided_by: hits.predicate.provided_by
+      original_subject: hits.subject.id
+      original_predicate: hits.predicate.relation
+      original_object: hits.object.id
+      provenance_url: hits.predicate.provenance
+      provenance_date: hits.predicate.provided_date
