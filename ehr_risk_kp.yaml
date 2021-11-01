@@ -10,7 +10,7 @@ info:
   title: Clinical Risk KP API
   version: '1.1'
   x-translator:
-    infores-curie: "infores:biothings-multiomics-clinical-risk"
+    infores: "infores:biothings-multiomics-clinical-risk"
     component: KP
     team:
     - Multiomics Provider
