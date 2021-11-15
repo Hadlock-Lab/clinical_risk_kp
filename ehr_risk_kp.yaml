@@ -19,8 +19,10 @@ info:
 servers:
 - description: Encrypted Production server
   url: https://biothings.ncats.io/clinical_risk_kp
+  x-maturity: production
 - description: Production server
   url: https://biothings.ncats.io/clinical_risk_kp
+  x-maturity: production
 tags:
 - name: disease
 - name: drug
