@@ -20,8 +20,8 @@ def load_tsv_data(data_folder):
     This function takes two parameters: edge_filepath and the node_filepath.
     It will return a json formats that has the key of id, subject, predicate, object as the main keys. 
     """
-    node_filepath = os.path.join(data_folder, "clinical_risk_ehr_risk_nodes_data_2022_06_01.csv")
-    edge_filepath = os.path.join(data_folder, "clinical_risk_ehr_risk_edges_data_2022_06_01.csv")
+    node_filepath = os.path.join(data_folder, "ehr_risk_nodes_data_2022_06_01.csv")
+    edge_filepath = os.path.join(data_folder, "ehr_risk_edges_data_2022_06_01.csv")
     edges_data = pd.read_csv(edge_filepath, sep = ',')
     nodes_data = pd.read_csv(node_filepath, sep = ',')
     cut_off = None
