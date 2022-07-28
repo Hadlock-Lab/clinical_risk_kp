@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
-
-
+# In[13]
 # Import Packages
 import numpy as np
 import pandas as pd
@@ -81,16 +79,16 @@ def load_tsv_data(data_folder):
                 association["odd_ratio"] = np.exp(row["feature_coefficient"])
 
             # make a unique id from  subject, predicate, and object indentifiers
-             if row["classifier"] == "Logistic Regression":
+            if row["classifier"] == "Logistic Regression":
                 unique_id_list = [row["subject"], row["predicate"], row["object"], row["classifier"], str(row["auc_roc"]), str(row["feature_coefficient"])]
-             else:
+            else:
                 unique_id_list = [row["subject"], row["predicate"], row["object"], row["classifier"], str(row["auc_roc"]),str(row["feature_importance"])]
-    json = {
+        json = {
             "_id":'-'.join(unique_id_list),
             "subject": subject,
             "association": association,
             "object": objects
-        }
+            }
         yield json
 
 
