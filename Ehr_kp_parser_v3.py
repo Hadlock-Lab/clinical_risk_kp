@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
 # In[13]
 # Import Packages
 import numpy as np
@@ -40,7 +39,7 @@ def load_tsv_data(data_folder):
                 row["subject"].split(':')[0]: row["subject"],
                 "id": row["subject"],
                 "name": node_name_mapping[row["subject"]],
-                "type": node_type_mapping[row["subject"]]
+                "type": node_type_mapping[row["subject"]] if pd.notnull(node_type_mapping[row["subject"]]) else "Check node category column"
             }
 #             current_xref = node_xref_mapping[row["subject"]]
             if ~np.isnan(node_xref_mapping[row["subject"]]):
@@ -90,10 +89,5 @@ def load_tsv_data(data_folder):
             "object": objects
             }
         yield json
-
-
-# In[ ]:
-
-
 
 
