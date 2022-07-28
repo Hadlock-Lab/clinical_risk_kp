@@ -81,11 +81,11 @@ def load_tsv_data(data_folder):
                 association["odd_ratio"] = np.exp(row["feature_coefficient"])
 
             # make a unique id from  subject, predicate, and object indentifiers
-#                 if row["classifier"] == "Logistic Regression":
-            unique_id_list = [row["subject"], row["predicate"], row["object"]]
-#                 else:
-#                     unique_id_list = [row["subject"], row["predicate"], row["object"]]
-        json = {
+             if row["classifier"] == "Logistic Regression":
+                unique_id_list = [row["subject"], row["predicate"], row["object"], row["classifier"], str(row["auc_roc"]), str(row["feature_coefficient"])]
+             else:
+                unique_id_list = [row["subject"], row["predicate"], row["object"], row["classifier"], str(row["auc_roc"]),str(row["feature_importance"])]
+    json = {
             "_id":'-'.join(unique_id_list),
             "subject": subject,
             "association": association,
