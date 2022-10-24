@@ -7,8 +7,8 @@
     },
     "dumper": {
         "data_url": [
-            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk/ehr_risk_nodes_data_2022_06_01.csv",
-            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk/ehr_risk_edges_data_2022_06_01.csv"
+            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk/ehr_risk_nodes_data_2022_09_20.csv",
+            "https://storage.googleapis.com/multiomics_provider_kp_data/clinical_risk/ehr_risk_edges_data_2022_09_20.csv"
         ],
         "uncompress": false,
         "release": "version:get_release"
