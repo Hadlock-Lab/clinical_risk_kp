@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[7]:
 
 
 #!/usr/bin/env python
@@ -50,7 +50,7 @@ def load_tsv_data(data_folder):
                     row["object"].split(':')[0]: row["object"],
                     "id": row["object"],
                     "name": node_name_mapping[row["object"]],
-                    "type": node_type_mapping[row["object"]]
+                    "type": node_type_mapping[row["object"]] if pd.notnull(node_type_mapping[row["object"]]) else "Unknown/Missing"
                 }
                 object_aspect = {row["object_aspect"].split(':')[0]: row["object_aspect"].split(':')[-1] if row["object_aspect"].startswith("biolink:") else row["object_aspect"]}
                 object_direction = {row["object_direction"].split(':')[0]:row["object_direction"].split(':')[-1] if row["object_direction"].startswith("biolink:") else row["object_direction"]}
@@ -89,6 +89,23 @@ def load_tsv_data(data_folder):
                     "object_direction":object_direction
                     }
                 yield json
+
+
+# In[9]:
+
+
+# filepath = "./Datasets/"
+# def main():
+#     count = 0
+#     verbose = True
+#     for row in load_tsv_data(filepath):
+#         if verbose:
+#             print(json.dumps(row, sort_keys= False, indent=2))
+#         count += 1
+#         if count >= 10:
+#            break
+# if __name__ == "__main__": 
+#     main()      
 
 
 # In[ ]:
