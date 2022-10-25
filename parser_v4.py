@@ -37,7 +37,7 @@ def load_tsv_data(data_folder):
             if row["subject"] and row["predicate"] and str(row["subject"]).split(':')[0] and str(row["object"]).split(':')[0]:
                 # Specify properties for subject
                 subject = {
-                    row["subject"].split(':')[0]: row["subject"],
+                    str(row["subject"]).split(':')[0]: row["subject"],
                     "id": row["subject"],
                     "name": node_name_mapping[row["subject"]],
                     "type": node_type_mapping[row["subject"]] if pd.notnull(node_type_mapping[row["subject"]]) else "Unknown/Missing"
@@ -47,7 +47,7 @@ def load_tsv_data(data_folder):
                     subject[node_xref_mapping[row["subject"]].split(':')[0]] =  node_xref_mapping[row["subject"]]
                 # Specify properties for object
                 objects = {
-                    row["object"].split(':')[0]: row["object"],
+                    str(row["object"]).split(':')[0]: row["object"],
                     "id": row["object"],
                     "name": node_name_mapping[row["object"]],
                     "type": node_type_mapping[row["object"]] if pd.notnull(node_type_mapping[row["object"]]) else "Unknown/Missing"
