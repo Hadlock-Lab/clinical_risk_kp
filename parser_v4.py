@@ -1,9 +1,3 @@
-#!#!/usr/bin/env python
-# coding: utf-8
-
-# In[16]:
-
-
 #!/usr/bin/env python
 # coding: utf-8
 # In[13]
@@ -32,6 +26,7 @@ def load_tsv_data(data_folder):
         node_type_mapping[row["id"]] = row["category"].split(':')[1] if str(row["category"]).startswith("biolink:") else row["category"]
         node_xref_mapping[row["id"]] = row["xref"] 
     # generate the edges attributes
+    edges_data = edges_data[edges_data['object'].notnull()]
     for index, row in edges_data[edges_data['pvalue']<=0.05].iterrows():
 #         if row['pvalue']<=0.05:
         if row["subject"] and row["predicate"] and str(row["subject"]).split(':')[0] and str(row["object"]).split(':')[0]:
@@ -89,26 +84,3 @@ def load_tsv_data(data_folder):
                 "object_direction":object_direction
                 }
             yield json
-            
-# In[9]:
-
-
-# filepath = "./Datasets/"
-# def main():
-#     count = 0
-#     verbose = True
-#     for row in load_tsv_data(filepath):
-#         if verbose:
-#             print(json.dumps(row, sort_keys= False, indent=2))
-#         count += 1
-#         if count >= 10:
-#            break
-# if __name__ == "__main__": 
-#     main()      
-
-
-# In[ ]:
-
-
-
-
