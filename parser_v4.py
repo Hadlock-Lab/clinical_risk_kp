@@ -34,7 +34,7 @@ def load_tsv_data(data_folder):
     # generate the edges attributes
     for index, row in edges_data.iterrows():
         if row['pvalue']<=0.05:
-            if row["subject"] and row["predicate"] and row["subject"].split(':')[0] and row["object"].split(':')[0]:
+            if row["subject"] and row["predicate"] and str(row["subject"]).split(':')[0] and str(row["object"]).split(':')[0]:
                 # Specify properties for subject
                 subject = {
                     row["subject"].split(':')[0]: row["subject"],
