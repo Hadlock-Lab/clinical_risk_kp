@@ -23,7 +23,7 @@ def load_tsv_data(data_folder):
         node_type_mapping[row["id"]] = row["category"].split(':')[1] if str(row["category"]).startswith("biolink:") else row["category"]
         node_xref_mapping[row["id"]] = row["xref"] 
     # generate the edges attributes
-    for index, row in edges_data[edges_data['pvalue']<=0.05].iterrows():
+    for index, row in edges_data[edges_data['p_value']<=0.05].iterrows():
         if row["subject"] and row["predicate"] and row["subject"].split(':')[0] and row["object"].split(':')[0]:
             # Specify properties for subject
             subject = {
@@ -56,7 +56,7 @@ def load_tsv_data(data_folder):
                 "classifier": row["classifier"],
                 "original_predicate": row["relation"],
                 "auc_roc": float(row["auc_roc"]),
-                "p_values": float(row["pvalue"])
+                "p_values": float(row["p_value"])
             }
             # conditional properties for predicate (if not Null)
             if ~np.isnan(row["feature_importance"]):
