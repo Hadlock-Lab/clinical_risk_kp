@@ -822,6 +822,12 @@ components:
   ##   but I DIDN'T MAKE OPERATIONS IF <5 RECORDS. so it was less: 204 operations / 102 pairs
   ## - addPrefix not used for MONDO/HP/CHEBI because BTE automatically keeps prefix on these IDs...
   ## - joinSafe is only needed if the delimiter isn't a comma
+  ## - could benefit from adding _exists_ filter, no-scopes querying instead
+  ## - always the same value: perhaps could put info in an external webpage instead?
+  ##   - association.provenance
+  ##   - association.classifier
+  ##   - association.original_predicate
+  ##   - association.provided_date
     DiseaseMONDO_increased_DiseaseMONDO:
     ## https://pending.biothings.io/multiomics_ehr_risk_kp/query?q=subject.type:Disease%20AND%20_exists_:subject.MONDO%20AND%20association.predicate:associated_with_increased_likelihood_of%20AND%20object.type:Disease%20AND%20_exists_:object.MONDO
     ## 14415 records
@@ -831,7 +837,6 @@ components:
           - id: MONDO
             semantic: Disease
         requestBodyType: object
-        ## can't set a _exists_:object.MONDO
         requestBody:
           body: >-
             {
@@ -839,20 +844,17 @@ components:
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
-        ## not including: 
-        ## - association.provided_date, association.classifier: same value for all of them, can find in the provenance field's link?
-        ## - feature_importance: no records had value for it
           fields: >-
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -876,13 +878,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -908,13 +910,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -938,13 +940,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -970,13 +972,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -1000,13 +1002,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1032,13 +1034,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -1062,13 +1064,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -1096,13 +1098,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -1126,13 +1128,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -1158,13 +1160,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -1188,13 +1190,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -1220,13 +1222,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -1250,13 +1252,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -1282,13 +1284,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -1312,13 +1314,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -1344,13 +1346,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -1374,13 +1376,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1406,13 +1408,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -1436,13 +1438,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1468,13 +1470,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -1498,13 +1500,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1530,13 +1532,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -1560,13 +1562,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -1596,13 +1598,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -1626,13 +1628,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -1658,13 +1660,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -1688,13 +1690,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -1720,13 +1722,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -1750,13 +1752,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -1782,13 +1784,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -1812,13 +1814,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1848,13 +1850,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -1878,13 +1880,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1910,13 +1912,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -1940,13 +1942,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -1972,13 +1974,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -2002,13 +2004,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -2034,13 +2036,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -2064,13 +2066,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -2098,13 +2100,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -2128,13 +2130,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -2160,13 +2162,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -2190,13 +2192,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2222,13 +2224,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -2252,13 +2254,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2284,13 +2286,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -2314,13 +2316,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2346,13 +2348,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -2376,13 +2378,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -2408,13 +2410,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -2438,13 +2440,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -2470,13 +2472,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -2500,13 +2502,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -2532,13 +2534,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -2562,13 +2564,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -2594,13 +2596,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -2624,13 +2626,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -2658,13 +2660,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -2688,13 +2690,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2720,13 +2722,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -2750,13 +2752,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2782,13 +2784,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -2812,13 +2814,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2844,13 +2846,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -2874,13 +2876,13 @@ components:
             subject.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-MONDO"
         # testExamples:
@@ -2908,13 +2910,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -2938,13 +2940,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -2970,13 +2972,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -3000,13 +3002,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3032,13 +3034,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -3062,13 +3064,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3094,13 +3096,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -3124,13 +3126,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3156,13 +3158,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -3186,13 +3188,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -3220,13 +3222,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -3250,13 +3252,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -3282,13 +3284,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -3312,13 +3314,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -3346,13 +3348,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -3376,13 +3378,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -3408,13 +3410,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -3438,13 +3440,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3470,13 +3472,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -3500,13 +3502,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3532,13 +3534,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -3562,13 +3564,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3594,13 +3596,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -3624,13 +3626,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -3656,13 +3658,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -3686,13 +3688,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -3720,13 +3722,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -3750,13 +3752,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -3782,13 +3784,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -3812,13 +3814,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -3846,13 +3848,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -3876,13 +3878,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3912,13 +3914,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -3942,13 +3944,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -3974,13 +3976,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -4004,13 +4006,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -4036,13 +4038,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -4066,13 +4068,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -4098,13 +4100,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -4128,13 +4130,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -4160,13 +4162,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -4190,13 +4192,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -4222,13 +4224,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -4252,13 +4254,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -4284,13 +4286,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -4314,13 +4316,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -4348,13 +4350,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -4378,13 +4380,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -4410,13 +4412,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -4440,13 +4442,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -4472,13 +4474,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -4502,13 +4504,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -4534,13 +4536,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -4564,13 +4566,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -4596,13 +4598,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -4626,13 +4628,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -4658,13 +4660,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -4688,13 +4690,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -4720,13 +4722,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -4750,13 +4752,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -4782,13 +4784,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -4812,13 +4814,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -4844,13 +4846,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -4874,13 +4876,13 @@ components:
             subject.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-SNOMEDCT"
         # testExamples:
@@ -4908,13 +4910,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -4938,13 +4940,13 @@ components:
             subject.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-HP"
         # testExamples:
@@ -4970,13 +4972,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -5000,13 +5002,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -5034,13 +5036,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -5064,13 +5066,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -5096,13 +5098,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -5126,13 +5128,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -5158,13 +5160,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -5188,13 +5190,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -5220,13 +5222,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -5250,13 +5252,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -5282,13 +5284,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -5312,13 +5314,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -5344,13 +5346,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -5374,13 +5376,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -5406,13 +5408,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -5436,13 +5438,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -5470,13 +5472,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -5500,13 +5502,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -5532,13 +5534,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -5562,13 +5564,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -5594,13 +5596,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -5624,13 +5626,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -5656,13 +5658,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -5686,13 +5688,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -5718,13 +5720,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -5748,13 +5750,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -5780,13 +5782,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -5810,13 +5812,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -5842,13 +5844,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -5872,13 +5874,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -5904,13 +5906,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -5934,13 +5936,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -5970,13 +5972,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -6000,13 +6002,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6032,13 +6034,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_increased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -6062,13 +6064,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: increased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6096,13 +6098,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -6126,13 +6128,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6158,13 +6160,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -6188,13 +6190,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6220,13 +6222,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -6250,13 +6252,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6282,13 +6284,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -6312,13 +6314,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6344,13 +6346,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -6374,13 +6376,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6406,13 +6408,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -6436,13 +6438,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6468,13 +6470,13 @@ components:
             object.MONDO,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: MONDO
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-MONDO"
         # testExamples:
@@ -6498,13 +6500,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -6532,13 +6534,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: Disease
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -6562,13 +6564,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -6594,13 +6596,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -6624,13 +6626,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6656,13 +6658,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -6686,13 +6688,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6718,13 +6720,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -6748,13 +6750,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -6780,13 +6782,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -6810,13 +6812,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6842,13 +6844,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -6872,13 +6874,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6904,13 +6906,13 @@ components:
             object.SNOMEDCT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: SNOMEDCT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-SNOMEDCT"
         # testExamples:
@@ -6934,13 +6936,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -6966,13 +6968,13 @@ components:
             object.HP,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: HP
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-HP"
         # testExamples:
@@ -6996,13 +6998,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -7028,13 +7030,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: PhenotypicFeature
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -7058,13 +7060,13 @@ components:
             subject.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-NCIT"
         # testExamples:
@@ -7092,13 +7094,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -7122,13 +7124,13 @@ components:
             subject.CHEBI,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: CHEBI
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-CHEBI"
         # testExamples:
@@ -7154,13 +7156,13 @@ components:
             object.NCIT,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: NCIT
             semantic: Procedure
         predicate: associated_with_decreased_likelihood_of
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/object-NCIT"
         # testExamples:
@@ -7184,13 +7186,13 @@ components:
             subject.UNII,
             association.provenance,
             association.auc_roc,association.p_values,
-            association.feature_coefficient,association.odd_ratio
+            association.feature_coefficient,association.odd_ratio,
+            association.classifier,association.original_predicate,association.provided_date
           size: 1000
         outputs:
           - id: UNII
             semantic: SmallMolecule
         predicate: decreased_likelihood_associated_with
-        ## no infores for a deeper source at the moment
         response_mapping:
           "$ref": "#/components/x-bte-response-mapping/subject-UNII"
         # testExamples:
@@ -7202,6 +7204,9 @@ components:
     object-MONDO:
       MONDO: object.MONDO
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7209,6 +7214,9 @@ components:
     object-NCIT:
       NCIT: object.NCIT
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7216,6 +7224,9 @@ components:
     object-SNOMEDCT:
       SNOMEDCT: object.SNOMEDCT
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7223,6 +7234,9 @@ components:
     object-HP:
       HP: object.HP
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7230,6 +7244,9 @@ components:
     object-CHEBI:
       CHEBI: object.CHEBI
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7237,6 +7254,9 @@ components:
     object-UNII:
       UNII: object.UNII
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7244,6 +7264,9 @@ components:
     subject-MONDO:
       MONDO: subject.MONDO
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7251,6 +7274,9 @@ components:
     subject-NCIT:
       NCIT: subject.NCIT
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7258,6 +7284,9 @@ components:
     subject-SNOMEDCT:
       SNOMEDCT: subject.SNOMEDCT
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7265,6 +7294,9 @@ components:
     subject-HP:
       HP: subject.HP
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7272,6 +7304,9 @@ components:
     subject-CHEBI:
       CHEBI: subject.CHEBI
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
@@ -7279,6 +7314,9 @@ components:
     subject-UNII:
       UNII: subject.UNII
       model_url: association.provenance
+      classifier_used: association.classifier
+      "biolink:original_predicate": association.original_predicate
+      date_provided: association.provided_date
       auc_roc: association.auc_roc
       p-value: association.p_values
       feature_coefficient: association.feature_coefficient
