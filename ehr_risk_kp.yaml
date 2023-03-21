@@ -912,7 +912,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1018,7 +1018,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1202,7 +1202,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1422,7 +1422,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1566,7 +1566,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1856,7 +1856,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2008,7 +2008,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Disease", "associated_with_decreased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Disease", "associated_with_decreased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2152,7 +2152,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2258,7 +2258,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2578,7 +2578,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2684,7 +2684,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2866,7 +2866,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3010,7 +3010,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3116,7 +3116,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3188,7 +3188,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3504,7 +3504,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3610,7 +3610,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3680,7 +3680,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3714,7 +3714,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3860,7 +3860,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","PhenotypicFeature", "associated_with_decreased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4004,7 +4004,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4214,7 +4214,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4320,7 +4320,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4392,7 +4392,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_increased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_increased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4566,7 +4566,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4776,7 +4776,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4814,7 +4814,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_increased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4922,7 +4922,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4992,7 +4992,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_increased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5134,7 +5134,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5382,7 +5382,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5454,7 +5454,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5628,7 +5628,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5838,7 +5838,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5876,7 +5876,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5946,7 +5946,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5980,7 +5980,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","Procedure", "associated_with_decreased_likelihood_of", "PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -6052,7 +6052,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "Procedure"]') }} ],
+              "q": [ {{ queryInputs | replPrefix('NCIT') | wrap( '["' , '","ChemicalSubstance", "associated_with_decreased_likelihood_of", "Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
