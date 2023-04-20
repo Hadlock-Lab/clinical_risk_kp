@@ -2,7 +2,7 @@
     "version": "0.2",
     "__metadata__": {
         "license_url": "",
-        "licence": "CC BY 4.0",
+        "license": "CC BY 4.0",
         "url": ""
     },
     "dumper": {
@@ -14,7 +14,7 @@
         "release": "version:get_release"
     },
     "uploader": {
-        "parser": "Ehr_kp_parser_v3:load_tsv_data",
+        "parser": "EHR_Risk_parser:parse_ehr_risk",
         "on_duplicates": "error"
     }
 }
