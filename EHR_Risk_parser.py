@@ -3,6 +3,7 @@
 import pandas as pd
 import json
 import sys, os
+import numpy as np
 
 def parse_ehr_risk(data_folder):
     nodes_filename = "ehr_risk_nodes_data_2022_06_01.csv"
@@ -51,7 +52,7 @@ def parse_ehr_risk(data_folder):
                       'subject_category',
                       'object_category'], inplace=True)
     
-    # for some reason, some subject or object ids literally contain the string "NONE"
+    # for some reason, some subject or object ids are empty (they actually literally contain the string "NONE")
     # get rid of these rows
     kg = kg[~kg["subject"].str.contains("NONE")==True]  # subject and object are all CURIEs, not names
     kg = kg[~kg["object"].str.contains("NONE")==True]
@@ -60,7 +61,7 @@ def parse_ehr_risk(data_folder):
     kg = kg[~kg["subject"].str.contains("None")==True]
     kg = kg[~kg["object"].str.contains("None")==True]
     
-#     for index, row in kg[4304:4315].iterrows(): # uncomment for testing
+#     for index, row in kg[1:2].iterrows(): # uncomment for testing
     for index, row in kg.iterrows(): # comment for testing 
         total_sampsize = int(row['num_patients_with_condition']+row['num_patients_without_condition']) # get total sample size
         total_sampsize = round(total_sampsize/10)*10 # round total sample size to nearest 10
@@ -185,21 +186,29 @@ def parse_ehr_risk(data_folder):
         id_dict["object"] = object_dict
         id_dict["source"] = source_dict
         
-        # filter/do not yield any rows that are missing any relevant values, such as subject name, subject id/CURIE, subject category, p-value, etc...
-        if not [x for x in (total_sampsize,
-                            row["subject"],
-                            row["subject_name"],
-                            row["subject_category"],
-                            row["object"],
-                            row["object_name"],
-                            row["object_category"],
-                            row["p_value"],
-                            row["auc_roc"],
-                            row['feature_coefficient']) if x in [None, "NONE", "None", "none", "NA"]]:
-            
-#             print(json.dumps(id_dict, indent=2)) # uncomment for testing
-#             print(index) # uncomment for testing. This should print as many rows as there are in kg if the parser doesn't produce error
-            yield id_dict # comment for testing
+    # throw error for any rows that are missing any relevant values, such as subject name, subject id/CURIE, subject category, p-value, etc...
+    try:
+        assert not {x for x in {total_sampsize,
+                                row["subject"],
+                                row["subject_name"],
+                                row["subject_category"],
+                                row["object"],
+                                row["object_name"],
+                                row["object_category"],
+                                row["p_value"],
+                                row["auc_roc"],
+                                row['feature_coefficient']} if x in {None,
+                                                                     "NONE",
+                                                                     "None",
+                                                                     "none",
+                                                                     "NA",
+                                                                     "NULL"}}, "Error: All values including subject and object IDs, categories, names, p-value, AUC-ROC, and feature coefficient must be non-null and not contain string literal None or NONE"
+#         print(json.dumps(id_dict, indent=2)) # uncomment for testing
+#         print(index) # uncomment for testing
+        yield id_dict # comment for testing
+    
+    except AssertionError as msg:
+        print(msg)
 
 # data_folder = "../../data" # uncomment for testing
 # parse_ehr_risk(data_folder) # uncomment for testing
