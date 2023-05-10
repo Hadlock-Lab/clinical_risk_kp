@@ -191,20 +191,18 @@ def parse_ehr_risk(data_folder):
                                                                          "None",
                                                                          "none",
                                                                          "NA"}}, "Error: All values including subject and object IDs, categories, names, p-value, AUC-ROC, and feature coefficient must be non-null and not contain string literal None or NONE"
-#             print(json.dumps(id_dict, indent=2)) # uncomment for testing
+            # print(json.dumps(id_dict, indent=2)) # uncomment for testing
 #             print(index) # uncomment for testing
-                yield id_dict # comment for testing
+            yield id_dict # comment for testing
         except AssertionError as msg:
             print(msg)
 
-# data_folder = "../../data" # uncomment for testing
-# parse_ehr_risk(data_folder) # uncomment for testing
 
-    
+            
 
 def main():
 	# data_folder = "../../data" # uncomment for testing
-	parse_ehr_risk(data_folder) 
+	# parse_ehr_risk(data_folder) 
 
 if __name__ == "__main__":
 	main()
