@@ -202,7 +202,7 @@ def parse_ehr_risk(data_folder):
 
 def main():
 	# data_folder = "../../data" # uncomment for testing
-	# parse_ehr_risk(data_folder) 
+	parse_ehr_risk(data_folder) 
 
 if __name__ == "__main__":
 	main()
