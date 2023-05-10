@@ -89,7 +89,7 @@ def parse_ehr_risk(data_folder):
                     {
                         "attribute_type_id": "biolink:supporting_study_method_type",
                         "value": "STATO:0000149",
-                        "description": "Binomial logistic regression for analysis of dichotomous dependent variable (in this case, for having this particular condition/disease/outcome or not)"
+                        "description": "Binomial logistic regression for analysis of dichotomous dependent variable (in this case, for having this particular condition/disease/outcome or not)."
                     },
                     {
                         "attribute_type_id":"biolink:update_date",
@@ -98,17 +98,17 @@ def parse_ehr_risk(data_folder):
                     {
                         "attribute_type_id": "biolink:p_value",
                         "value": float(row["p_value"]),
-                        "description": "p-value_of_log_odds_ratio"
+                        "description": "The p-value represents the probability of observing the estimated coefficient (or more extreme value) under the assumption of the null hypothesis (which assumes that there is no relationship between the independent variable and outcome variable). The p-value associated with each coefficient helps determine whether the relationship between the independent variable and the outcome is statistically significant. A low p-value suggests that the observed relationship between the independent variable and the outcome is unlikely to occur by chance alone, providing evidence against the null hypothesis."
                     },
                     {
                         "attribute_type_id": "STATO:0000209",
                         "value": float(row["auc_roc"]),
-                        "description": "AUC_ROC_of_logistic_regression_model"
+                        "description": "The AUROC provides a way to evaluate the model's ability to discriminate between the two classes (the presenece of absence of condition/disease/outcome). Values range between 0-1; the higher the AUROC, the better the model's ability to discriminate between clasess."
                     },
                     {
                         "attribute_type_id": "biolink:log_odds_ratio",
                         "value": float(row['feature_coefficient']),
-                        "description": "log_odds_ratio"
+                        "description": "The logarithm of the odds ratio (log odds ratio), or the ratio of the odds of event Y occurring in an exposed group versus the odds of event Y occurring in a non-exposed group."
                     },
 #                     {
 #                         "attribute_type_id": "biolink:log_odds_ratio_95_confidence_interval",
@@ -121,12 +121,12 @@ def parse_ehr_risk(data_folder):
                     },
                     {
                         "attribute_type_id": "biolink:supporting_study_date_range",
-                        "value": "2021-2023 (prediction)"
+                        "value": "2020-2022 (prediction)"
                     },
                     {
                         "attribute_type_id": "biolink:supporting_study_size",
                         "value": int(row["total_sample_size"]),
-                        "description": "total_sample_size"
+                        "description": "The total number of patients or participants within a sample population."
                     }
                 ]
             }
@@ -198,7 +198,7 @@ def parse_ehr_risk(data_folder):
             print(msg)
 
 
-            
+
 
 def main():
 	# data_folder = "../../data" # uncomment for testing
