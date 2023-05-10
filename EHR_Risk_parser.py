@@ -6,67 +6,58 @@ import sys, os
 import numpy as np
 
 def parse_ehr_risk(data_folder):
-    nodes_filename = "ehr_risk_nodes_data_2022_06_01.csv"
+
     edges_filename = "ehr_risk_edges_data_2022_06_01.csv"
+    nodes_filename = "ehr_risk_nodes_data_2022_06_01.csv"
+
     nodes_filepath = os.path.join(data_folder, nodes_filename)
     edges_filepath = os.path.join(data_folder, edges_filename)
     nodes_data = pd.read_csv(nodes_filepath, sep = ',')
     edges_data = pd.read_csv(edges_filepath, sep = ',')
     
-    edges_data["num_patients_with_condition"] = 10**(edges_data['log_positive_patient_count']) # convert log pos patient count to an actual # 
-    edges_data["num_patients_without_condition"] = 10**(edges_data['log_negative_patient_count']) # convert log neg patient count to an actual # 
-#     edges_data["num_patients_with_condition"] = np.random.poisson(edges_data['num_patients_with_condition'])  # add poisson noise injection
-#     edges_data["num_patients_without_condition"] = np.random.poisson(edges_data['num_patients_without_condition']) # add poisson noise injection
-#     edges_data = edges_data.drop(['log_positive_patient_count', 'log_negative_patient_count'], axis=1)
-
-    # there appears to be duplicate CURIEs
-    # This MUST be fixed at the enclave level
+    # the nodes file has duplicate ids; fix in enclave in future
     nodes_data = nodes_data.drop_duplicates(subset='id', keep="first")
     
-    # merge the edges and nodes dataframes (dropping "xref" bc it's empty)
-    ## merging subject info from nodes df
-    kg = pd.merge(edges_data, nodes_data[['id', 'name', 'category']], left_on='subject', right_on = 'id')
+    # we originally provided the # of patients with condition --> log + patient count, and # of patients without condition --> log - patient count
+    # get the approximate total number of patients in the study and call it "total_sample_size"
+    edges_data["num_patients_with_condition"] = 10**(edges_data['log_positive_patient_count']) # convert log pos patient count to an actual # 
+    edges_data["num_patients_without_condition"] = 10**(edges_data['log_negative_patient_count']) # convert log neg patient count to an actual #
+    edges_data = edges_data.drop(['log_positive_patient_count', 'log_negative_patient_count'], axis=1)
+    edges_data["total_sample_size"] = edges_data["num_patients_with_condition"] + edges_data["num_patients_without_condition"]
+    edges_data = edges_data.drop(['num_patients_with_condition', 'num_patients_without_condition'], axis=1)
+    edges_data["total_sample_size"] = np.random.poisson(edges_data["total_sample_size"]) # add poisson noise injection 
+
+#     # create confidence interval column by concatenating 'lower_confidence_bound'and 'upper_confidence_bound', then dropping those columns
+#     edges_data['log_odds_ratio_95_confidence_interval'] = edges_data.apply(lambda row: [row['lower_confidence_bound'], row['upper_confidence_bound']], axis=1)
+#     edges_data = edges_data.drop(['lower_confidence_bound', 'upper_confidence_bound'], axis=1)
+    
+    #  ----- RE-CONSTRUCT KG FROM NODES AND EDGES FILES ------  #
+    # merge the subject names, categories and ids from the nodes csv/table to the edges table
+    kg = pd.merge(edges_data, nodes_data[['id', 'name', 'category']], left_on='subject', right_on = 'id', how="inner")
     kg.rename(columns = {'category_x':'predicate_category',
                          'category_y': 'subject_category',
                          'id': 'subject_id',
-                         'name': 'subject_name'},
-              inplace = True)
-    ## merging object info from nodes df
-    kg = pd.merge(kg, nodes_data[['id', 'name', 'category']], left_on='object', right_on = 'id')
+                         'name': 'subject_name'}, inplace = True)
+    # merge the object names, categories and ids from the nodes csv/table to the edges table
+    kg = pd.merge(kg, nodes_data[['id', 'name', 'category']], left_on='object', right_on = 'id', how="inner")
     kg.rename(columns = {'id':'object_id',
-                         'category': 'object_category',
-                         'name': 'object_name'}, inplace = True)
+                     'category': 'object_category',
+                     'name': 'object_name'}, inplace = True)
+    #  ----- ------------------------------------------ ------  #
     
-#     kg = kg[kg["p_value"] < 0.2] # subset by p-value threshold
-
-    # ENSURE THERE ARE UNIQUE RECORDS/ROWS
+    # ensure there are no duplicates
     kg = kg.drop_duplicates(['subject', 'object', 'auc_roc', 'p_value', 'feature_coefficient'], keep='first')
-    # some of the rows are missing subject IDs or object IDs
-    kg.dropna(subset=['subject',
-                      'object',
-                      'auc_roc',
-                      'p_value',
-                      'feature_coefficient',
-                      'num_patients_with_condition',
-                      'num_patients_without_condition',
-                      'subject_category',
-                      'object_category'], inplace=True)
     
-    # for some reason, some subject or object ids are empty (they actually literally contain the string "NONE")
-    # get rid of these rows
+    # some of the subjects/objects contain the string literal "NONE" (specific culprit is COVID Negative or something) Should look into this in future 
     kg = kg[~kg["subject"].str.contains("NONE")==True]  # subject and object are all CURIEs, not names
     kg = kg[~kg["object"].str.contains("NONE")==True]
     kg = kg[~kg["subject"].str.contains("none")==True]
     kg = kg[~kg["object"].str.contains("none")==True]
     kg = kg[~kg["subject"].str.contains("None")==True]
     kg = kg[~kg["object"].str.contains("None")==True]
-    
-#     for index, row in kg[1:2].iterrows(): # uncomment for testing
-    for index, row in kg.iterrows(): # comment for testing 
-        total_sampsize = int(row['num_patients_with_condition']+row['num_patients_without_condition']) # get total sample size
-        total_sampsize = round(total_sampsize/10)*10 # round total sample size to nearest 10
-        total_sampsize = np.random.poisson(total_sampsize) # poisson noise injection
 
+    # iterate through each row in KG to yield json formatted triple
+    for index, row in kg.iterrows(): # comment for testing  
         id_dict = {} # this is the outter dict that holds inner dicts: subject_dict, association_dict, object_dict, and source_dict
         subject_dict = {} # inner dict
         association_dict = {} # inner dict
@@ -87,9 +78,9 @@ def parse_ehr_risk(data_folder):
 
         association_dict["predicate"] = "{}".format(row["predicate"].split(':')[1]) # create the association dict from the rows of the df. Edge attributes need extra work. The predicate is separated out into qualified predicate by X-BTE annotation, so we don't have to worry about qualifiers here
         association_dict["edge_attributes"] = []
-        
+
         source_dict["edge_sources"] = []
-        
+
         association_dict["edge_attributes"].append(
             {
                 "attribute_type_id":"biolink:has_supporting_study_result",
@@ -107,39 +98,36 @@ def parse_ehr_risk(data_folder):
                     {
                         "attribute_type_id": "biolink:p_value",
                         "value": float(row["p_value"]),
-                        "description": "p-value for the feature's coefficient"
+                        "description": "p-value_of_log_odds_ratio"
                     },
                     {
                         "attribute_type_id": "STATO:0000209",
                         "value": float(row["auc_roc"]),
-                        "description": "AUC-ROC of the logistic regression model"
+                        "description": "AUC_ROC_of_logistic_regression_model"
                     },
                     {
-                        "attribute_type_id": "STATO:0000565",
+                        "attribute_type_id": "biolink:log_odds_ratio",
                         "value": float(row['feature_coefficient']),
                         "description": "log_odds_ratio"
                     },
+#                     {
+#                         "attribute_type_id": "biolink:log_odds_ratio_95_confidence_interval",
+#                         "value": row['log_odds_ratio_95_confidence_interval'],
+#                         "description": "log_odds_ratio_95_confidence_interval"
+#                     },
                     {
                         "attribute_type_id": "biolink:supporting_study_cohort",
                         "value": "age < 18 excluded"
                     },
                     {
                         "attribute_type_id": "biolink:supporting_study_date_range",
-                        "value": "2020-2022 (future prediction)"
+                        "value": "2021-2023 (prediction)"
                     },
                     {
                         "attribute_type_id": "biolink:supporting_study_size",
-                        "value": "{}".format(int(total_sampsize)),
+                        "value": int(row["total_sample_size"]),
                         "description": "total_sample_size"
-                    },
-    #                 {
-    #                     "attribute_type_id": "biolink:supporting_study_context",
-    #                     "value": "Approximate # of patients with condition: {}".format(row["num_patients_with_condition"]) 
-    #                 },
-    #                 {
-    #                     "attribute_type_id": "biolink:supporting_study_context",
-    #                     "value": "Approximate # of patients without condition: {}".format(row["num_patients_without_condition"]) 
-    #                 }
+                    }
                 ]
             }
         )
@@ -166,14 +154,15 @@ def parse_ehr_risk(data_folder):
         object_dict["id"] = row["object"]
         object_dict["name"] = row["object_name"]
         object_dict["type"] = row["object_category"]
-        
+
         source_dict["edge_sources"].append(
             {
                 "resource_id": "infores:biothings-multiomics-ehr-risk",
-                "resource_role": "primary_knowledge_source"
+                "resource_role": "primary_knowledge_source",
+                "upstream_resource_ids": "infores:providence-st-joseph-ehr"
             }
         )
-        
+
         source_dict["edge_sources"].append(
             {
                 "resource_id": "infores:providence-st-joseph-ehr",
@@ -185,33 +174,33 @@ def parse_ehr_risk(data_folder):
         id_dict["association"] = association_dict
         id_dict["object"] = object_dict
         id_dict["source"] = source_dict
-        
-    # throw error for any rows that are missing any relevant values, such as subject name, subject id/CURIE, subject category, p-value, etc...
-    try:
-        assert not {x for x in {total_sampsize,
-                                row["subject"],
-                                row["subject_name"],
-                                row["subject_category"],
-                                row["object"],
-                                row["object_name"],
-                                row["object_category"],
-                                row["p_value"],
-                                row["auc_roc"],
-                                row['feature_coefficient']} if x in {None,
-                                                                     "NONE",
-                                                                     "None",
-                                                                     "none",
-                                                                     "NA",
-                                                                     "NULL"}}, "Error: All values including subject and object IDs, categories, names, p-value, AUC-ROC, and feature coefficient must be non-null and not contain string literal None or NONE"
-#         print(json.dumps(id_dict, indent=2)) # uncomment for testing
-#         print(index) # uncomment for testing
-        yield id_dict # comment for testing
-    
-    except AssertionError as msg:
-        print(msg)
+
+        # throw error for any rows that are missing any relevant values, such as subject name, subject id/CURIE, subject category, p-value, etc...
+        try:
+            assert not {x for x in {row["total_sample_size"],
+                                    row["subject"],
+                                    row["subject_name"],
+                                    row["subject_category"],
+                                    row["object"],
+                                    row["object_name"],
+                                    row["object_category"],
+                                    row["p_value"],
+                                    row["auc_roc"],
+                                    row['feature_coefficient']} if x in {None,
+                                                                         "NONE",
+                                                                         "None",
+                                                                         "none",
+                                                                         "NA"}}, "Error: All values including subject and object IDs, categories, names, p-value, AUC-ROC, and feature coefficient must be non-null and not contain string literal None or NONE"
+#             print(json.dumps(id_dict, indent=2)) # uncomment for testing
+#             print(index) # uncomment for testing
+                yield id_dict # comment for testing
+        except AssertionError as msg:
+            print(msg)
 
 # data_folder = "../../data" # uncomment for testing
 # parse_ehr_risk(data_folder) # uncomment for testing
+
+    
 
 def main():
 	# data_folder = "../../data" # uncomment for testing
