@@ -17,6 +17,9 @@ def parse_ehr_risk(data_folder):
     
     # the nodes file has duplicate ids; fix in enclave in future
     nodes_data = nodes_data.drop_duplicates(subset='id', keep="first")
+
+    # biolink category biolink:ChemicalSubstance has been deprecated. Use biolink:ChemicalEntity instead
+    nodes_data["category"].mask(nodes_data["category"] == "biolink:ChemicalSubstance", "biolink:ChemicalEntity" , inplace=True )
     
     # we originally provided the # of patients with condition --> log + patient count, and # of patients without condition --> log - patient count
     # get the approximate total number of patients in the study and call it "total_sample_size"
@@ -206,8 +209,6 @@ def parse_ehr_risk(data_folder):
     else:
         print("Document IDs appear to be unique")
 
-# data_folder = "../../data" # uncomment for testing
-# parse_ehr_risk(data_folder) # uncomment for testing
 
 def main():
 	# data_folder = "../../data" # uncomment for testing
