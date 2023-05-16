@@ -132,7 +132,7 @@ def parse_ehr_risk(data_folder):
                         "value": "2020-2022 (prediction)"
                     },
                     {
-                        "attribute_type_id": "biolink:supporting_study_size",
+                        "attribute_type_id": "biolink:total_sample_size",
                         "value": int(row["total_sample_size"]),
                         "description": "The total number of patients or participants within a sample population."
                     }
