@@ -1,9 +1,8 @@
 openapi: 3.0.3
 info:
   contact:
-    email: bbelhu@systemsbiology.org
-    name: Basazin Belhu
-    x-id: https://github.com/Bassa1
+    email: knarsinh@systemsbiology.org
+    name: Kamileh Narsinh
     x-role: responsible developer
   description: >-
     Documentation of the BioThings API for Translator Multiomics Team's 
@@ -521,7 +520,7 @@ components:
     dotfield:
       name: dotfield
       description: >-
-        Optional, can be used to control the format of the returned chemical object. 
+        Optional, can be used to control the format of the returned object. 
         If "dotfield" is true, the returned data object is returned flattened (no nested objects) 
         using dotfield notation for key names. Default: false.
       in: query
@@ -578,7 +577,7 @@ components:
     fields:
       name: fields
       description: >-
-        Optional, can be a comma-separated list to limit the fields returned from the chemical object. 
+        Optional, can be a comma-separated list to limit the fields returned from the object. 
         If "fields=all", all available fields will be returned.
         
 
@@ -593,7 +592,7 @@ components:
     from:
       name: from
       description: >-
-        Optional, the number of matching chemical hits to skip, starting from 0. Default: 0. 
+        Optional, the number of matching hits to skip, starting from 0. Default: 0. 
       in: query
       required: false
       schema:
@@ -616,7 +615,7 @@ components:
     size:
       name: size
       description: >-
-        Optional, the maximum number of matching chemical hits to return (with a cap of 1000 at the moment). Default: 10.
+        Optional, the maximum number of matching hits to return (with a cap of 1000 at the moment). Default: 10.
         The combination of "size" and "from" parameters can be used to get paging for a large query.
       in: query
       required: false
