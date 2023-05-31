@@ -101,21 +101,21 @@ def parse_ehr_risk(data_folder):
                     },
                     {
                         "attribute_type_id":"biolink:update_date",
-                        "value": str(row["provided_date"])
+                        "value":row["provided_date"]
                     },
                     {
                         "attribute_type_id": "biolink:p_value",
-                        "value": str(row["p_value"]),
+                        "value": float(row["p_value"]),
                         "description": "The p-value represents the probability of observing the estimated coefficient (or more extreme value) under the assumption of the null hypothesis (which assumes that there is no relationship between the independent variable and outcome variable). The p-value associated with each coefficient helps determine whether the relationship between the independent variable and the outcome is statistically significant. A low p-value suggests that the observed relationship between the independent variable and the outcome is unlikely to occur by chance alone, providing evidence against the null hypothesis."
                     },
                     {
                         "attribute_type_id": "STATO:0000209",
-                        "value": str(row["auc_roc"]),
+                        "value": float(row["auc_roc"]),
                         "description": "The AUROC provides a way to evaluate the model's ability to discriminate between the two classes (the presenece of absence of condition/disease/outcome). Values range between 0-1; the higher the AUROC, the better the model's ability to discriminate between clasess."
                     },
                     {
                         "attribute_type_id": "biolink:log_odds_ratio",
-                        "value": str(row['feature_coefficient']),
+                        "value": float(row['feature_coefficient']),
                         "description": "The logarithm of the odds ratio (log odds ratio), or the ratio of the odds of event Y occurring in an exposed group versus the odds of event Y occurring in a non-exposed group."
                     },
 #                     {
@@ -133,7 +133,7 @@ def parse_ehr_risk(data_folder):
                     },
                     {
                         "attribute_type_id": "biolink:total_sample_size",
-                        "value": str(row["total_sample_size"]),
+                        "value": int(row["total_sample_size"]),
                         "description": "The total number of patients or participants within a sample population."
                     }
                 ]
