@@ -3,7 +3,6 @@ info:
   contact:
     email: knarsinh@systemsbiology.org
     name: Kamileh Narsinh
-    x-id: https://github.com/GitHubbit
     x-role: responsible developer
   description: >-
     Documentation of the BioThings API for Translator Multiomics Team's 
@@ -26,19 +25,14 @@ servers:
   url: http://biothings.ncats.io/multiomics_ehr_risk_kp
   x-maturity: production
 tags:
-- name: multiomics
-- name: clinical
-- name: ehr
-- name: risk
 - name: disease
 - name: chemical
 - name: phenotype
 - name: procedure
 - name: association
-- name: regression
+- name: query
 - name: translator
 - name: biothings
-- name: bte
 paths:
   "/association/{id}":
     get:
@@ -310,372 +304,209 @@ paths:
       # summary: Make batch gene queries and return matching gene hits
       tags:
       - query
-      ## (122 operations based on TSV)
+      ## 74 sets (148 operations)
       ## not included:
-      ## - ChemCHEBI_decreased_DiseaseMONDO
-      ## - ChemCHEBI_decreased_DiseaseNCIT
-      ## - ChemCHEBI_decreased_DiseaseSNOMEDCT
-      ## - ChemCHEBI_decreased_PhenoHP
-      ## - ChemCHEBI_decreased_PhenoNCIT
-      ## - ChemCHEBI_decreased_PhenoSNOMEDCT
-      ## - ChemCHEBI_decreased_ProcedureNCIT
-      ## - ChemCHEBI_increased_DiseaseMONDO
-      ## - ChemCHEBI_increased_DiseaseNCIT
-      ## - ChemCHEBI_increased_DiseaseSNOMEDCT
-      ## - ChemCHEBI_increased_PhenoHP
-      ## - ChemCHEBI_increased_PhenoNCIT
-      ## - ChemCHEBI_increased_PhenoSNOMEDCT
-      ## - ChemCHEBI_increased_ProcedureNCIT
-      ## - ChemUNII_decreased_DiseaseMONDO
-      ## - ChemUNII_decreased_DiseaseNCIT
-      ## - ChemUNII_decreased_DiseaseSNOMEDCT
-      ## - ChemUNII_decreased_PhenoHP
-      ## - ChemUNII_decreased_PhenoNCIT
-      ## - ChemUNII_decreased_PhenoSNOMEDCT
-      ## - ChemUNII_decreased_ProcedureNCIT
-      ## - ChemUNII_increased_DiseaseMONDO
-      ## - ChemUNII_increased_DiseaseNCIT
-      ## - ChemUNII_increased_DiseaseSNOMEDCT
-      ## - ChemUNII_increased_PhenoHP
-      ## - ChemUNII_increased_PhenoNCIT
-      ## - ChemUNII_increased_PhenoSNOMEDCT
-      ## - ChemUNII_increased_ProcedureNCIT
-      ## - DiseaseMONDO_decreased_DiseaseMONDO
-      ## - DiseaseMONDO_decreased_DiseaseNCIT
-      ## - DiseaseMONDO_decreased_DiseaseSNOMEDCT
-      ## - DiseaseMONDO_decreased_PhenoHP
-      ## - DiseaseMONDO_decreased_PhenoNCIT
-      ## - DiseaseMONDO_decreased_PhenoSNOMEDCT
-      ## - DiseaseMONDO_decreased_ProcedureNCIT
-      ## - DiseaseMONDO_increased_DiseaseMONDO
-      ## - DiseaseMONDO_increased_DiseaseNCIT
-      ## - DiseaseMONDO_increased_DiseaseSNOMEDCT
-      ## - DiseaseMONDO_increased_PhenoHP
-      ## - DiseaseMONDO_increased_PhenoNCIT
-      ## - DiseaseMONDO_increased_PhenoSNOMEDCT
-      ## - DiseaseMONDO_increased_ProcedureNCIT
-      ## - DiseaseNCIT_decreased_DiseaseMONDO
-      ## - DiseaseNCIT_decreased_DiseaseSNOMEDCT
-      ## - DiseaseNCIT_decreased_PhenoHP
-      ## - DiseaseNCIT_decreased_PhenoNCIT
-      ## - DiseaseNCIT_decreased_ProcedureNCIT
-      ## - DiseaseNCIT_increased_DiseaseMONDO
+      ## - DiseaseNCIT_increased_DiseaseNCIT
       ## - DiseaseNCIT_increased_DiseaseSNOMEDCT
-      ## - DiseaseNCIT_increased_PhenoHP
-      ## - DiseaseNCIT_increased_PhenoNCIT
-      ## - DiseaseNCIT_increased_PhenoSNOMEDCT
-      ## - DiseaseSNOMEDCT_decreased_DiseaseMONDO
-      ## - DiseaseSNOMEDCT_decreased_DiseaseNCIT
-      ## - DiseaseSNOMEDCT_decreased_DiseaseSNOMEDCT
-      ## - DiseaseSNOMEDCT_decreased_PhenoHP
-      ## - DiseaseSNOMEDCT_decreased_PhenoNCIT
-      ## - DiseaseSNOMEDCT_decreased_PhenoSNOMEDCT
-      ## - DiseaseSNOMEDCT_decreased_ProcedureNCIT
       ## - DiseaseSNOMEDCT_increased_DiseaseMONDO
       ## - DiseaseSNOMEDCT_increased_DiseaseNCIT
       ## - DiseaseSNOMEDCT_increased_DiseaseSNOMEDCT
-      ## - DiseaseSNOMEDCT_increased_PhenoHP
+      ## - DiseaseNCIT_increased_PhenoHP
+      ## - DiseaseNCIT_increased_PhenoNCIT
+      ## - DiseaseNCIT_increased_PhenoSNOMEDCT
       ## - DiseaseSNOMEDCT_increased_PhenoNCIT
       ## - DiseaseSNOMEDCT_increased_PhenoSNOMEDCT
+      ## - DiseaseNCIT_increased_ProcedureNCIT
       ## - DiseaseSNOMEDCT_increased_ProcedureNCIT
-      ## - PhenoHP_decreased_DiseaseMONDO
-      ## - PhenoHP_decreased_DiseaseNCIT
-      ## - PhenoHP_decreased_DiseaseSNOMEDCT
-      ## - PhenoHP_decreased_PhenoHP
-      ## - PhenoHP_decreased_PhenoNCIT
-      ## - PhenoHP_decreased_PhenoSNOMEDCT
-      ## - PhenoHP_decreased_ProcedureNCIT
-      ## - PhenoHP_increased_DiseaseMONDO
-      ## - PhenoHP_increased_DiseaseNCIT
-      ## - PhenoHP_increased_DiseaseSNOMEDCT
-      ## - PhenoHP_increased_PhenoHP
-      ## - PhenoHP_increased_PhenoNCIT
-      ## - PhenoHP_increased_PhenoSNOMEDCT
-      ## - PhenoHP_increased_ProcedureNCIT
-      ## - PhenoNCIT_decreased_DiseaseMONDO
-      ## - PhenoNCIT_decreased_DiseaseNCIT
-      ## - PhenoNCIT_decreased_DiseaseSNOMEDCT
-      ## - PhenoNCIT_decreased_PhenoHP
-      ## - PhenoNCIT_decreased_PhenoNCIT
-      ## - PhenoNCIT_decreased_PhenoSNOMEDCT
-      ## - PhenoNCIT_decreased_ProcedureNCIT
-      ## - PhenoNCIT_increased_DiseaseMONDO
+      ## - DiseaseNCIT_decreased_DiseaseMONDO
+      ## - DiseaseNCIT_decreased_DiseaseNCIT
+      ## - DiseaseNCIT_decreased_DiseaseSNOMEDCT
+      ## - DiseaseSNOMEDCT_decreased_DiseaseNCIT
+      ## - DiseaseSNOMEDCT_decreased_DiseaseSNOMEDCT
+      ## - DiseaseMONDO_decreased_PhenoSNOMEDCT
+      ## - DiseaseNCIT_decreased_PhenoHP
+      ## - DiseaseNCIT_decreased_PhenoNCIT
+      ## - DiseaseNCIT_decreased_PhenoSNOMEDCT
+      ## - DiseaseSNOMEDCT_decreased_PhenoNCIT
+      ## - DiseaseSNOMEDCT_decreased_PhenoSNOMEDCT
+      ## - DiseaseNCIT_decreased_ProcedureNCIT
+      ## - DiseaseSNOMEDCT_decreased_ProcedureNCIT
       ## - PhenoNCIT_increased_DiseaseNCIT
       ## - PhenoNCIT_increased_DiseaseSNOMEDCT
-      ## - PhenoNCIT_increased_PhenoHP
+      ## - PhenoSNOMEDCT_increased_DiseaseNCIT
       ## - PhenoNCIT_increased_PhenoNCIT
       ## - PhenoNCIT_increased_PhenoSNOMEDCT
+      ## - PhenoSNOMEDCT_increased_PhenoNCIT
+      ## - PhenoSNOMEDCT_increased_PhenoSNOMEDCT
       ## - PhenoNCIT_increased_ProcedureNCIT
-      ## - PhenoSNOMEDCT_decreased_DiseaseMONDO
+      ## - PhenoSNOMEDCT_increased_ProcedureNCIT
+      ## - PhenoNCIT_decreased_DiseaseNCIT
       ## - PhenoSNOMEDCT_decreased_DiseaseNCIT
-      ## - PhenoSNOMEDCT_decreased_DiseaseSNOMEDCT
-      ## - PhenoSNOMEDCT_decreased_PhenoHP
+      ## - PhenoNCIT_decreased_PhenoSNOMEDCT
       ## - PhenoSNOMEDCT_decreased_PhenoNCIT
       ## - PhenoSNOMEDCT_decreased_PhenoSNOMEDCT
+      ## - PhenoNCIT_decreased_ProcedureNCIT
       ## - PhenoSNOMEDCT_decreased_ProcedureNCIT
-      ## - PhenoSNOMEDCT_increased_DiseaseMONDO
-      ## - PhenoSNOMEDCT_increased_DiseaseNCIT
-      ## - PhenoSNOMEDCT_increased_DiseaseSNOMEDCT
-      ## - PhenoSNOMEDCT_increased_PhenoHP
-      ## - PhenoSNOMEDCT_increased_PhenoNCIT
-      ## - PhenoSNOMEDCT_increased_ProcedureNCIT
-      ## - ProcedureNCIT_decreased_DiseaseMONDO
-      ## - ProcedureNCIT_decreased_DiseaseNCIT
-      ## - ProcedureNCIT_decreased_DiseaseSNOMEDCT
-      ## - ProcedureNCIT_decreased_PhenoHP
-      ## - ProcedureNCIT_decreased_PhenoNCIT
-      ## - ProcedureNCIT_decreased_PhenoSNOMEDCT
-      ## - ProcedureNCIT_decreased_ProcedureNCIT
-      ## - ProcedureNCIT_increased_DiseaseMONDO
       ## - ProcedureNCIT_increased_DiseaseNCIT
-      ## - ProcedureNCIT_increased_DiseaseSNOMEDCT
-      ## - ProcedureNCIT_increased_PhenoHP
+      ## - ChemUNII_increased_PhenoSNOMEDCT
       ## - ProcedureNCIT_increased_PhenoNCIT
       ## - ProcedureNCIT_increased_PhenoSNOMEDCT
       ## - ProcedureNCIT_increased_ProcedureNCIT
+      ## - ChemUNII_decreased_DiseaseNCIT
+      ## - ProcedureNCIT_decreased_DiseaseNCIT
+      ## - ChemUNII_decreased_PhenoSNOMEDCT
+      ## - ProcedureNCIT_decreased_PhenoSNOMEDCT
+      ## - ChemUNII_decreased_ProcedureNCIT
+      ## - ProcedureNCIT_decreased_ProcedureNCIT
       x-bte-kgs-operations:
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_ProcedureNCIT'
       - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseMONDO'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoHP'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoSNOMEDCT'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_ProcedureNCIT'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_ProcedureNCIT-rev'
       - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseNCIT'
       - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseSNOMEDCT'
       - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_DiseaseMONDO'
       - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseNCIT_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_PhenoSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoHP'
       - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_increased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseSNOMEDCT_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/DiseaseMONDO_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseMONDO'
       - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseNCIT'
       - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseSNOMEDCT'
       - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseMONDO'
       - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseMONDO'
       - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseSNOMEDCT'
       - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_PhenoSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_increased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_PhenoHP'
       - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_increased_ProcedureNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_increased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_PhenoSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoNCIT_decreased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoSNOMEDCT_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/PhenoHP_decreased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseMONDO'
       - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseMONDO-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseSNOMEDCT'
       - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_PhenoSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoHP'
       - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoHP-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoNCIT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_PhenoSNOMEDCT-rev'
-      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_increased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_increased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_increased_ProcedureNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseMONDO'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseMONDO-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_DiseaseSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoSNOMEDCT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_PhenoSNOMEDCT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemUNII_decreased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoHP'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoHP-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ProcedureNCIT_decreased_PhenoNCIT-rev'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_ProcedureNCIT'
+      - $ref: '#/components/x-bte-kgs-operations/ChemCHEBI_decreased_ProcedureNCIT-rev'
 components:
   parameters:
     callback:
@@ -689,7 +520,7 @@ components:
     dotfield:
       name: dotfield
       description: >-
-        Optional, can be used to control the format of the returned chemical object. 
+        Optional, can be used to control the format of the returned object. 
         If "dotfield" is true, the returned data object is returned flattened (no nested objects) 
         using dotfield notation for key names. Default: false.
       in: query
@@ -746,7 +577,7 @@ components:
     fields:
       name: fields
       description: >-
-        Optional, can be a comma-separated list to limit the fields returned from the chemical object. 
+        Optional, can be a comma-separated list to limit the fields returned from the object. 
         If "fields=all", all available fields will be returned.
         
 
@@ -761,7 +592,7 @@ components:
     from:
       name: from
       description: >-
-        Optional, the number of matching chemical hits to skip, starting from 0. Default: 0. 
+        Optional, the number of matching hits to skip, starting from 0. Default: 0. 
       in: query
       required: false
       schema:
@@ -784,7 +615,7 @@ components:
     size:
       name: size
       description: >-
-        Optional, the maximum number of matching chemical hits to return (with a cap of 1000 at the moment). Default: 10.
+        Optional, the maximum number of matching hits to return (with a cap of 1000 at the moment). Default: 10.
         The combination of "size" and "from" parameters can be used to get paging for a large query.
       in: query
       required: false
@@ -976,7 +807,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1007,7 +838,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1040,7 +871,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1104,7 +935,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1199,7 +1030,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1242,7 +1073,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1273,7 +1104,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1306,7 +1137,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1370,7 +1201,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1471,7 +1302,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1508,7 +1339,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1539,7 +1370,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1576,7 +1407,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1607,7 +1438,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1640,7 +1471,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1704,7 +1535,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1805,7 +1636,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1842,7 +1673,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1873,7 +1704,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -1906,7 +1737,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2009,7 +1840,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2046,7 +1877,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2077,7 +1908,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Disease", "associated_with_decreased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2114,7 +1945,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2145,7 +1976,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2178,7 +2009,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2242,7 +2073,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2337,7 +2168,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2405,7 +2236,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2504,7 +2335,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2535,7 +2366,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2568,7 +2399,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2632,7 +2463,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2727,7 +2558,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2795,7 +2626,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2832,7 +2663,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2863,7 +2694,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2900,7 +2731,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2931,7 +2762,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -2964,7 +2795,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3028,7 +2859,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3123,7 +2954,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3253,7 +3084,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3352,7 +3183,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3383,7 +3214,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3416,7 +3247,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3480,7 +3311,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3575,7 +3406,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3705,7 +3536,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3742,7 +3573,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3773,7 +3604,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3810,7 +3641,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3841,7 +3672,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3874,7 +3705,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -3938,7 +3769,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4033,7 +3864,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4194,7 +4025,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4225,7 +4056,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4260,7 +4091,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4291,7 +4122,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_increased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.SNOMEDCT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4324,7 +4155,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4355,7 +4186,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4388,7 +4219,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4452,7 +4283,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4547,7 +4378,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4646,7 +4477,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4677,7 +4508,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4714,7 +4545,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4745,7 +4576,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4778,7 +4609,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.UNII", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4809,7 +4640,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_increased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4844,7 +4675,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4875,7 +4706,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4908,7 +4739,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -4972,7 +4803,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5067,7 +4898,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5166,7 +4997,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5197,7 +5028,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.MONDO", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5232,7 +5063,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5263,7 +5094,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:Disease"]') }} ],
               "scopes": ["object.SNOMEDCT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5296,7 +5127,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5327,7 +5158,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5360,7 +5191,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5424,7 +5255,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5519,7 +5350,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5618,7 +5449,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5649,7 +5480,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.HP", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5682,7 +5513,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["subject.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5713,7 +5544,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:PhenotypicFeature", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:Procedure", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5748,7 +5579,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap ( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["subject.CHEBI", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
@@ -5779,7 +5610,7 @@ components:
         requestBody:
           body: >-
             {
-              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:PhenotypicFeature"]') }} ],
+              "q": [ {{ queryInputs | rmPrefix() | wrap( '["' , '","biolink:ChemicalEntity", "associated_with_decreased_likelihood_of", "biolink:Procedure"]') }} ],
               "scopes": ["object.NCIT", "subject.type", "association.predicate", "object.type"]
             }
         parameters:
