@@ -813,7 +813,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -844,7 +844,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -877,7 +877,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -908,7 +908,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -941,7 +941,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -972,7 +972,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1005,7 +1005,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1036,7 +1036,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1079,7 +1079,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1110,7 +1110,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1143,7 +1143,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1174,7 +1174,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1207,7 +1207,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1238,7 +1238,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1277,7 +1277,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1308,7 +1308,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1345,7 +1345,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1376,7 +1376,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1413,7 +1413,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1444,7 +1444,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1477,7 +1477,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1508,7 +1508,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1541,7 +1541,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1572,7 +1572,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1611,7 +1611,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1642,7 +1642,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1679,7 +1679,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1710,7 +1710,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1743,7 +1743,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1774,7 +1774,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1815,7 +1815,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1846,7 +1846,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1883,7 +1883,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1914,7 +1914,7 @@ components:
         parameters:
           fields: >-
             subject.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1951,7 +1951,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -1982,7 +1982,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2015,7 +2015,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2046,7 +2046,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2079,7 +2079,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2110,7 +2110,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2143,7 +2143,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2174,7 +2174,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2211,7 +2211,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2242,7 +2242,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2277,7 +2277,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2308,7 +2308,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2341,7 +2341,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2372,7 +2372,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2405,7 +2405,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2436,7 +2436,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2469,7 +2469,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2500,7 +2500,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2533,7 +2533,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2564,7 +2564,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2601,7 +2601,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2632,7 +2632,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2669,7 +2669,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2700,7 +2700,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2737,7 +2737,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2768,7 +2768,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2801,7 +2801,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2832,7 +2832,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2865,7 +2865,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2896,7 +2896,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2929,7 +2929,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2960,7 +2960,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -2995,7 +2995,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3026,7 +3026,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3059,7 +3059,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3090,7 +3090,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3125,7 +3125,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3156,7 +3156,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3189,7 +3189,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3220,7 +3220,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3253,7 +3253,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3284,7 +3284,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3317,7 +3317,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3348,7 +3348,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3381,7 +3381,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3412,7 +3412,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3445,7 +3445,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3476,7 +3476,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3511,7 +3511,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3542,7 +3542,7 @@ components:
         parameters:
           fields: >-
             subject.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3579,7 +3579,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3610,7 +3610,7 @@ components:
         parameters:
           fields: >-
             subject.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3647,7 +3647,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3678,7 +3678,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3711,7 +3711,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3742,7 +3742,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3775,7 +3775,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3806,7 +3806,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3839,7 +3839,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3870,7 +3870,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3903,7 +3903,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3934,7 +3934,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3967,7 +3967,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -3998,7 +3998,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4031,7 +4031,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4062,7 +4062,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4097,7 +4097,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4128,7 +4128,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4161,7 +4161,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4192,7 +4192,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4225,7 +4225,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4256,7 +4256,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4289,7 +4289,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4320,7 +4320,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4353,7 +4353,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4384,7 +4384,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4417,7 +4417,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4448,7 +4448,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4483,7 +4483,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4514,7 +4514,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4551,7 +4551,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4582,7 +4582,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4615,7 +4615,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4646,7 +4646,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4681,7 +4681,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4712,7 +4712,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4745,7 +4745,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4776,7 +4776,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4809,7 +4809,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4840,7 +4840,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4873,7 +4873,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4904,7 +4904,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4939,7 +4939,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -4970,7 +4970,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5003,7 +5003,7 @@ components:
         parameters:
           fields: >-
             object.MONDO,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5034,7 +5034,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5069,7 +5069,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5100,7 +5100,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5133,7 +5133,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5164,7 +5164,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5197,7 +5197,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5228,7 +5228,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5261,7 +5261,7 @@ components:
         parameters:
           fields: >-
             object.SNOMEDCT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5292,7 +5292,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5325,7 +5325,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5356,7 +5356,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5389,7 +5389,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5420,7 +5420,7 @@ components:
         parameters:
           fields: >-
             subject.UNII,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5455,7 +5455,7 @@ components:
         parameters:
           fields: >-
             object.HP,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5486,7 +5486,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5519,7 +5519,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5550,7 +5550,7 @@ components:
         parameters:
           fields: >-
             subject.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5585,7 +5585,7 @@ components:
         parameters:
           fields: >-
             object.NCIT,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5616,7 +5616,7 @@ components:
         parameters:
           fields: >-
             subject.CHEBI,
-            association.edge_attributes,
+            association.edge_attributes,source.edge_sources,
             subject.name,object.name
           size: 1000
         outputs:
@@ -5641,58 +5641,70 @@ components:
       input_name: subject.name
       output_name: object.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     object-NCIT:
       NCIT: object.NCIT
       input_name: subject.name
       output_name: object.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     object-SNOMEDCT:
       SNOMEDCT: object.SNOMEDCT
       input_name: subject.name
       output_name: object.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     object-HP:
       HP: object.HP
       input_name: subject.name
       output_name: object.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     object-CHEBI:
       CHEBI: object.CHEBI
       input_name: subject.name
       output_name: object.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     object-UNII:
       UNII: object.UNII
       input_name: subject.name
       output_name: object.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     subject-MONDO:
       MONDO: subject.MONDO
       input_name: object.name
       output_name: subject.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     subject-NCIT:
       NCIT: subject.NCIT
       input_name: object.name
       output_name: subject.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     subject-SNOMEDCT:
       SNOMEDCT: subject.SNOMEDCT
       input_name: object.name
       output_name: subject.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     subject-HP:
       HP: subject.HP
       input_name: object.name
       output_name: subject.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     subject-CHEBI:
       CHEBI: subject.CHEBI
       input_name: object.name
       output_name: subject.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
     subject-UNII:
       UNII: subject.UNII
       input_name: object.name
       output_name: subject.name
       edge-attributes: association.edge_attributes
+      trapi_sources: source.edge_sources
