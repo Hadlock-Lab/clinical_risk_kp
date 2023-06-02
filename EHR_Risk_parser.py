@@ -5,6 +5,13 @@ import json
 import sys, os
 import numpy as np
 
+#!/usr/bin/env python3
+
+import pandas as pd
+import json
+import sys, os
+import numpy as np
+
 def parse_ehr_risk(data_folder):
 
     edges_filename = "ehr_risk_edges_data_2022_06_01.csv"
@@ -62,6 +69,7 @@ def parse_ehr_risk(data_folder):
     id_list = [] # use this to check if your document IDs are unique. Collect them and see if they're all unique
     
     # iterate through each row in KG to yield json formatted triple
+#     for index, row in kg[:2].iterrows(): # uncomment for testing  
     for index, row in kg.iterrows(): # comment for testing  
         id_dict = {} # this is the outter dict that holds inner dicts: subject_dict, association_dict, object_dict, and source_dict
         subject_dict = {} # inner dict
@@ -167,7 +175,7 @@ def parse_ehr_risk(data_folder):
             {
                 "resource_id": "infores:biothings-multiomics-ehr-risk",
                 "resource_role": "primary_knowledge_source",
-                "upstream_resource_ids": "infores:providence-st-joseph-ehr"
+                "upstream_resource_ids": ["infores:providence-st-joseph-ehr"]
             }
         )
 
@@ -208,6 +216,8 @@ def parse_ehr_risk(data_folder):
         print("You do not have unique document IDs for each edge in your KG. Either you have duplicate rows/edges, or you simply didn't make a unique identifer (Document ID) for each one.")
     else:
         print("Document IDs appear to be unique")
+
+
 
 
 def main():
