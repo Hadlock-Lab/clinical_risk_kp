@@ -5708,3 +5708,4 @@ components:
       output_name: subject.name
       edge-attributes: association.edge_attributes
       trapi_sources: source.edge_sources
+      edge-attributes: association.edge_attributes
