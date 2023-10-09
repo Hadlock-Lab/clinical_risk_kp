@@ -1,3 +1,3 @@
 # clinical_risk_kp
 
-Please see: [https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-EHR-Risk-KP#also-known-as-ehr-clinical-kp](url)
+Please see: [EHR KP](https://github.com/NCATSTranslator/Translator-All/wiki/Multiomics-EHR-Risk-KP#also-known-as-ehr-clinical-kp)
