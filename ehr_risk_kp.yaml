@@ -21,9 +21,6 @@ servers:
 - description: Encrypted Production server
   url: https://biothings.ncats.io/multiomics_ehr_risk_kp
   x-maturity: production
-- description: Production server
-  url: http://biothings.ncats.io/multiomics_ehr_risk_kp
-  x-maturity: production
 tags:
 - name: disease
 - name: chemical
